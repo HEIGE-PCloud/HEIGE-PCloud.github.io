@@ -14,4 +14,4 @@ Chinese content will not be provided any more.
 
 Hope you enjoy it!!
 
-![BlackAIWallpaper](https://raw.githubusercontent.com/HEIGE-PCloud/HEIGE-PCloud.github.io/images/BlackAIWallpaper.jpg)
+![BlackAIWallpaper](../images/BlackAI.jpg)
