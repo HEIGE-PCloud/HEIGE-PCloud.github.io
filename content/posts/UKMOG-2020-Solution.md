@@ -95,7 +95,7 @@ It is a really attemptable problem on basic algebra and combinatorics, just try 
 
 ## Problem 2
 
-Twelve points, four of which are vertices, lie on the perimeter of a square. The distance between adjacent points is one unit. Some of the points have been connected by straight lines. $B$ is the intersection of two of those lines, as shown in the [diagram](https://raw.githubusercontent.com/HEIGE-PCloud/HEIGE-PCloud.github.io/images/UKMOG%202020%20T2.png).
+Twelve points, four of which are vertices, lie on the perimeter of a square. The distance between adjacent points is one unit. Some of the points have been connected by straight lines. $B$ is the intersection of two of those lines, as shown in the diagram.
 
 ### Task 2(a)
 
@@ -113,8 +113,8 @@ Find the area of the shaded region. (7 marks)
 
 $$
 \begin{aligned}
-\because& AC=2,AB:BC:CA=2:3:\sqrt{13}\\\\
-\therefore& AB=\frac{4}{\sqrt{13}},BC=\frac{6}{\sqrt{13}}\\\\
+\because& AC=2,AB:BC:CA=2:3:\sqrt{13}\\\\ 
+\therefore& AB=\frac{4}{\sqrt{13}},BC=\frac{6}{\sqrt{13}}\\\\ 
 \therefore& Area=(\sqrt{13}-\frac{4}{\sqrt{13}}-\frac{6}{\sqrt{13}})^2=\frac{9}{13}
 \end{aligned}
 $$
@@ -133,16 +133,16 @@ The expression $10xy-2x+5y-1$ factorizes as $(ax+b)(cy+d)$ where $a,b,c,d$ are i
 
 $$
 \begin{aligned}
-10xy-2x+5y-1&=(2x+1)(5y-1)\\\\
+10xy-2x+5y-1&=(2x+1)(5y-1)\\\\ 
 \end{aligned}
 $$
 
 $$
 \begin{cases}
-a&=2\\\\
-b&=1\\\\
-c&=5\\\\
-d&=-1\\\\
+a&=2\\\\ 
+b&=1\\\\ 
+c&=5\\\\ 
+d&=-1\\\\ 
 \end{cases}
 $$
 
@@ -154,7 +154,7 @@ Using the factorization above and considering factor pairs of $99$, find all int
 
 $$
 \begin{aligned}
-10xy-2x+5y-1&=99\\\\
+10xy-2x+5y-1&=99\\\\ 
 (2x+1)(5y-1)&=99
 \end{aligned}
 $$
@@ -171,7 +171,7 @@ Find all integer pairs $(x,y)$ such that $10xy-2x+5y=100000001$. (5 marks)
 
 $$
 \begin{aligned}
-10xy-2x+5y&=100000001\\\\
+10xy-2x+5y&=100000001\\\\ 
 (2x+1)(5y-1)&=100000000
 \end{aligned}
 $$
