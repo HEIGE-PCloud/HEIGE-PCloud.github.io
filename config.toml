@@ -39,6 +39,14 @@ theme = "LoveIt"
     url = "/categories/"
     title = ""
     weight = 3
+  [[menu.main]]
+    identifier = "about"
+    pre = ""
+    post = ""
+    name = "About"
+    url = "/hello-world/"
+    title = ""
+    weight = 4
 
 [params]
   #  LoveIt 主题版本
@@ -183,12 +191,12 @@ theme = "LoveIt"
 
   # 作者的社交信息设置
   [params.social]
-    GitHub = "HEIGE-PCloud"
+    GitHub = "HEIGE-PCloud/HEIGE-PCloud.github.io"
     Linkedin = ""
     Twitter = ""
     Instagram = ""
     Facebook = ""
-    Telegram = ""
+    Telegram = "pcloudqwq"
     Medium = ""
     Gitlab = ""
     Youtubelegacy = ""
@@ -245,7 +253,7 @@ theme = "LoveIt"
     XMPP = ""
     Matrix = ""
     Bilibili = ""
-    Email = "heige.pcloud@outlook.com"
+    Email = ""
     RSS = true # 
 
   #  文章页面配置
@@ -527,7 +535,7 @@ theme = "LoveIt"
 [author]
   name = "PCloud"
   email = "heige.pcloud@outlook.com"
-  link = "https://github.com/HEIGE-PCloud/HEIGE-PCloud.github.io"
+  link = "/hello-world/"
 
 # 网站地图配置
 [sitemap]
