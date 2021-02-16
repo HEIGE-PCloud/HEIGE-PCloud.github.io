@@ -125,7 +125,7 @@ theme = "LoveIt"
     #  是否显示版权信息
     copyright = true
     #  是否显示作者
-    author = false
+    author = true
     # 网站创立年份
     since = 2020
     # ICP 备案信息，仅在中国使用 (支持 HTML 格式)
@@ -161,7 +161,7 @@ theme = "LoveIt"
       # Gravatar 邮箱，用于优先在主页显示的头像
       gravatarEmail = ""
       # 主页显示头像的 URL
-      avatarURL = "/images/avatar.png"
+      avatarURL = "/images/avatar.webp"
       #  主页显示的网站标题 (支持 HTML 格式)
       title = ""
       # 主页显示的网站副标题
@@ -527,7 +527,7 @@ theme = "LoveIt"
 [author]
   name = "PCloud"
   email = "heige.pcloud@outlook.com"
-  link = ""
+  link = "https://github.com/HEIGE-PCloud/HEIGE-PCloud.github.io"
 
 # 网站地图配置
 [sitemap]
