@@ -8,7 +8,7 @@ draft: false
 
 # Preface
 
-The United Kingdom Mathematical Olympiad for Girls is, well apparently, according to its name, a math competition for girls specifically. Which also means it is a little bit easier than the BMO Round 1, so it is a good opportunity for me to **have a attempt of writing a serious solution** for such competitions. I may keep posting my own solutions to some BMO or IMO questions, or may not.
+The United Kingdom Mathematical Olympiad for Girls is, well apparently, according to its name, a math competition for girls specifically. Which also means it is a little bit easier than the BMO Round 1, so it is a good opportunity for me to **have an attempt of writing a serious solution** for such competitions. I may keep posting my own solutions to some BMO or IMO questions, or may not.
 
 <!-- more -->
 
