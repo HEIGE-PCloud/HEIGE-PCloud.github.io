@@ -22,9 +22,9 @@ And there is an [official solution](https://bmos.ukmt.org.uk/home/ukmog-2020-sol
 
 If there are any conflicts between my solutions and the official one, please take the official one. After all, at the end of the day, it is not me who will mark your paper.
 
-# Problems and solutions:
+# Problems and solutions
 
-## Problem 1:
+## Problem 1
 
 ### Task 1(a)
 
