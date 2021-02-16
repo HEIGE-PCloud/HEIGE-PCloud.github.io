@@ -5,6 +5,10 @@ tags: [Mathematics]
 draft: false
 ---
 
+Test for $\LaTeX$ support.
+
+<!--more-->
+
 $$\begin{aligned}
 \nabla\cdot\vec{E} &=& \frac{\rho}{\epsilon_0} \\\\ 
 \nabla\cdot\vec{B} &=& 0 \\\\ 
