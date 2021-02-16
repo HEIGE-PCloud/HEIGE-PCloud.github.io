@@ -281,7 +281,7 @@ theme = "LoveIt"
       # 是否使用目录
       enable = true
       #  是否保持使用文章前面的静态目录
-      keepStatic = true
+      keepStatic = false
       # 是否使侧边目录自动折叠展开
       auto = true
     #  代码配置
@@ -528,7 +528,7 @@ theme = "LoveIt"
       unsafe = true
   # 目录设置
   [markup.tableOfContents]
-    startLevel = 2
+    startLevel = 1
     endLevel = 6
 
 # 作者配置
@@ -550,9 +550,7 @@ theme = "LoveIt"
 
 # 隐私信息配置
 [privacy]
-  #  Google Analytics 相关隐私 (被 params.analytics.google 替代)
-  [privacy.googleAnalytics]
-    # ...
+
   [privacy.twitter]
     enableDNT = true
   [privacy.youtube]
