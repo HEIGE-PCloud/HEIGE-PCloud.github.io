@@ -25,6 +25,7 @@ e.g.
 4. Extension problem: How about number e?
 
 **Knowledge points**
+e.g.
 - limit
 - integration
 - differentiation
