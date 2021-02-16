@@ -1,5 +1,5 @@
 ---
-title: Mathjax Test
+title: LaTeX Test
 date: 2020-10-21T20:53:57Z
 tags: [Mathematics]
 draft: false
