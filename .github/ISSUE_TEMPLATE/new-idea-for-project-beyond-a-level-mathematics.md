@@ -29,3 +29,6 @@ e.g.
 - limit
 - integration
 - differentiation
+
+**External References**
+Includes any references that may help to explain this idea clearly.
