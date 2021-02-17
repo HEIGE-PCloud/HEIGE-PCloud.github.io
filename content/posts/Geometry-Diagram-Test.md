@@ -2,7 +2,7 @@
 title: "Geometry Diagram Test"
 date: 2021-02-17T16:44:11Z
 tags: [Test]
-draft: true
+draft: false
 ---
 
 ## GeoGebra Embed Webpage
