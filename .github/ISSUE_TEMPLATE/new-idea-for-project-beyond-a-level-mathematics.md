@@ -17,11 +17,11 @@ e.g. A Level Mathematics for OCR A Student Book 2
 3. Which Chapter?
 e.g. Chapter 1 Proof and mathematical communication
 5. Which page?
-e.g. page 4
+e.g. Page 4
 7. Related content in the book?
 Prove that square root 2 is irrational
 
-**Content Outline**
+**Content outline**
 e.g.
 1. How to define number π?
 2. Historical researches
@@ -34,5 +34,5 @@ e.g.
 - integration
 - differentiation
 
-**External References**
+**External references**
 Includes any references that may help to explain this idea clearly.
