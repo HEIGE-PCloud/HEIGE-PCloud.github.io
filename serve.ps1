@@ -1,1 +1,0 @@
-hugo serve --disableFastRender --buildDrafts --bind=192.168.137.1
