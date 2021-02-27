@@ -4,49 +4,63 @@ date: 2021-02-27T13:42:08Z
 draft: false
 ---
 
-Similar to the process of proving $\sqrt{2}$ is not rational, we use proof by contradiction to prove that $\pi$ is an irrational number.
+## Try to prove it yourself!
+
+> This question is designed to split the original long proof into small and approachable questions. Just take it as a longer STEP question. Through proofing by your own hands, you can better appreciate the beauty of mathematics. You can check your answer by reading the explained proof below, or you can just skip it if you want. But I still strongly recommend you to have a go by yourself!😀
 
 Assume that $\pi=\frac{p}{q}$ where $p$ and $q$ are integers with no common factors.
 
 Let $f(x)=\frac{x^n(p-qx)^n}{n!}(n\isin\mathbf{N})$
 
-1. Show that $f(x)=\frac{x^nq^n(\pi-x)^n}{n!}$.
+1. Expand $(p-qx)^n$, use the symbol $\sum$ to write up your answer.
 
-2. Expand $(p-qx)^n$, use the symbol $\sum$ to write up your answer.
-
-3. Show that $f(x)=\sum\limits_{m=n}^{2n}\frac{a_mx^m}{n!}(a_m,m\isin\mathbf{Z},n\leq m\leq 2n)$. Express $a_m$ in terms of $m,n,p,q$.
+2. Show that $f(x)=\sum\limits_{m=n}^{2n}\frac{a_mx^m}{n!}(a_m,m\isin\mathbf{Z},n\leq m\leq 2n)$. Express $a_m$ in terms of $m,n,p,q$.
 
 Consider the $k^{th}$ derivative $(\frac{ax^m}{n!})^{(k)}(k\isin\mathbf{N})$.
 
-4. Show that $\frac{a\cdot m!}{n!}\isin\mathbf{Z}$.
+3. When $k=1$, find $(\frac{ax^m}{n!})'$.
 
-5. When $k=1$, find $(\frac{ax^m}{n!})'$.
+4. State the value of $(\frac{ax^m}{n!})^{(k)}$ when $k>m$.
 
-6. Show that when $k>m$, $(\frac{ax^m}{n!})^{(k)}=0$.
+5. When $k=m$, find $(\frac{ax^m}{n!})^{(k)}$.
 
-7. When $k=m$, find $(\frac{ax^m}{n!})^{(k)}$.
+6. When $k<m$, find $(\frac{ax^m}{n!})^{(k)}$.
 
-8. When $k<m$, find $(\frac{ax^m}{n!})^{(k)}$.
-
-9. Show that $f^{(k)}(0)\isin\mathbf{Z}$ for all $k\isin\mathbf{Z}$.
+7. Show that $f^{(k)}(0)\isin\mathbf{Z}$ for all $k\isin\mathbf{Z}$.
 
 Consider function $f(\pi-x)$.
 
-10. Show that $f(x)=f(\pi-x)$.
+8. Show that $f(x)=\frac{x^nq^n(\pi-x)^n}{n!}$.
 
-11. Show that $f^{(k)}(\pi)=(-1)^{k}f^{(k)}(0)\isin\mathbf{Z}$
+9. Show that $f(x)=f(\pi-x)$.
 
-Let $F(x)=f(x)-f^{(2)}(x)+f^{(4)}(x)-f^{(6)}(x)+...+(-1)^nf^{(2n)}(x))$.
+10. Show that $f^{(k)}(\pi)=(-1)^{k}f^{(k)}(0)\isin\mathbf{Z}$
 
-12. Show that $F(x)+F''(x)=f(x)$.
+Let $F(x)=f(x)-f^{(2)}(x)+f^{(4)}(x)-f^{(6)}(x)+...+(-1)^nf^{(2n)}(x)$.
 
-13. Show that $\frac{\operatorname{d}}{\operatorname{d}x}[F'(x)\sin(x)-F(x)\cos(x)]=f(x)\sin(x)$.
+11. Show that $F(x)+F''(x)=f(x)$.
 
-14. Show that $A=\int_0 ^\pi f(x)\sin(x)\operatorname{d}x=F(0)+F(\pi)\isin\mathbf{Z}$.
+12. Show that $\frac{\operatorname{d}}{\operatorname{d}x}[F'(x)\sin(x)-F(x)\cos(x)]=f(x)\sin(x)$.
 
-When $0<x<\pi$:
+13. Show that $A=\int_0 ^\pi f(x)\sin(x)\operatorname{d}x=F(0)+F(\pi)\isin\mathbf{Z}$.
 
-15. Show that $f(x)\sin(x)>0$
+When $0<x<\pi$, given that
+
+- If $f(x)>0$ then $\int_a ^b f(x) \operatorname{d}x>0$
+- If $0<f(x)<g(x)$ then $0<\int_a ^b f(x) \operatorname{d}x<\int_a ^b g(x) \operatorname{d}x$
+- $\lim\limits_{n\rightarrow+\infin}\frac{\pi^{n+1}p^n}{n!}=0$
+
+14. Show $A>0$.
+
+15. Show $A<1$.
+
+16. Hence, or otherwise, find the contradiction and show that $\pi$ is an irrational number.
+
+## TODO
+
+Similar to the process of proving $\sqrt{2}$ is not rational, we use proof by contradiction to prove that $\pi$ is an irrational number.
+
+Given that $$
 
 Because $f(x)\sin(x)>0$, we can say $\int_0 ^\pi f(x)\sin(x)\operatorname{d}x=A>0$. 
 
@@ -69,7 +83,7 @@ Note that when $0<x<\pi$, we have $f(x)=\frac{x^n(p-qx)^n}{n!}<\frac{\pi^np^n}{n
 
 $$A=\int_0 ^\pi f(x)\sin(x)\operatorname{d}x<\int_0 ^\pi \frac{\pi^np^n}{n!}\times 1\operatorname{d}x$$
 
-16.  Show that $\int_0 ^\pi \frac{\pi^np^n}{n!}\times 1\operatorname{d}x=\frac{\pi^{n+1}p^n}{n!}$.
+Show that $\int_0 ^\pi \frac{\pi^np^n}{n!}\times 1\operatorname{d}x=\frac{\pi^{n+1}p^n}{n!}$.
 
 Note that
 
