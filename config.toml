@@ -117,7 +117,7 @@ theme = "LoveIt"
       # 标题名称
       name = "Planet Cloud"
       # 你可以在名称 (允许 HTML 格式) 之前添加其他信息, 例如图标
-      pre = ""
+      pre = "<i class=\"fa fa-cloud fa-fw\" aria-hidden=\"true\"></i>"
       # 你可以在名称 (允许 HTML 格式) 之后添加其他信息, 例如图标
       post = ""
       #  是否为标题显示打字机动画
@@ -528,7 +528,7 @@ theme = "LoveIt"
       unsafe = true
   # 目录设置
   [markup.tableOfContents]
-    startLevel = 1
+    startLevel = 2
     endLevel = 6
 
 # 作者配置
