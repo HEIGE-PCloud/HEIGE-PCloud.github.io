@@ -10,7 +10,7 @@ draft: false
 3. Give any $n (n>2)$ points $A_1, A_2, ..., A_n$ on the plane, the distance between any two points is less than 1, than $\max\{\min_{1\leq i< j \leq n}\{A_iA_j\}\}=$____.
 4. The equation $\frac{4}{n}=\frac{1}{x}+\frac{1}{y}+\frac{1}{z}$ has no positive integer solutions for $x,y,z$, then the minimum value for the positive integer $n$ is ____.
 5. Let $\sigma(n)=\sum_{d|n, d\in\mathbb{Z}^+}d$, then the minimum odd number satisfies $\sigma(n)=2n$ is ____.
-6. Given that $f(x)\in Z[x]$ and $f(e+\pi)=0$, then $\deg f(x)=$ ____.
+6. Given that $f(x)\in Z\left[x\right]$ and $f(e+\pi)=0$, then $\deg f(x)=$ ____.
 7. Let $p_n$ be the $n^{th}$ prime number from small to large, than the sum of all positive integer $n$ satisfies $p_{n+1}-p_{n}=2$ is ____.
 8. Given a positive integer $m$, if any $n$ points on the plane must contain $m$ points which can form $m$ vertices of a convex $m$ polygon, than $\min\{n\}=$ ____.
 9. Prove: $\int_{0} ^{1} (\Sigma_{x=1} ^N e^{2\pi ix^k \alpha})   ^2(\Sigma_{x=1} ^N e^{-2\pi ix^k \alpha})d\alpha=0$.

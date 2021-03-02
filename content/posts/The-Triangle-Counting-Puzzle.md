@@ -6,7 +6,7 @@ draft: false
 ---
 
 
-# The beginning of the story
+## The beginning of the story
 
 > A fun journey to an integer sequence.
 
@@ -16,7 +16,7 @@ Everything started from the Puzzle 137 from [www.puzzleoftheweek.com](http://www
 
 <iframe src="https://drive.google.com/file/d/1AeL1S_7PyV-OGhbslY4hsn9xAp02785O/preview" width="640" height="480"></iframe>
 
-# Starter
+## Starter
 
 Counting the number of the triangles is pretty easy, and I recommend this puzzle to your any 3 year old cousins to "develop their early mathematical thinking".
 
@@ -79,11 +79,11 @@ print(Triangle_Counting_Puzzle(n))
 
 The result for $n=100$ is $256275$. We can save this for checking in the future.
 
-# Deal with the double sum
+## Deal with the double sum
 
 There are three double sum in our equation, and actually, we can transform all of them into polynomials, here is my approach.
 
-## For triangles facing up
+### For triangles facing up
 
 For the first one:
 
@@ -110,7 +110,7 @@ I think you must have heard about the genius [Gauss' story](https://www.nctm.org
 
 There are multiple approaches towards this, the most common one is to prove by induction. This is actually a pretty good chance to practice the ability of proving by induction, so you may try this by yourself. But proving by induction has a serious issue - you need to know or at least guess out the conclusion before you can prove it, which is very hard in this case if you don't know the conclusion before. So I am going to introduce an alternative approach.
 
-#### Lemma 1 $\sum_{i=1}^{n}i^2=\frac{1}{6}n(n+1)(2n+1)$
+##### Lemma 1 $\sum_{i=1}^{n}i^2=\frac{1}{6}n(n+1)(2n+1)$
 
 Consider $1^3,2^3,...n^3,(n+1)^3$
 
@@ -145,9 +145,9 @@ $$
 \end{aligned}
 $$
 
-## For triangles facing down
+### For triangles facing down
 
-### When $n$ is odd
+#### When $n$ is odd
 
 Similarly
 
@@ -160,7 +160,7 @@ $$
 
 So we only need to find out the value of $2^2+4^2+\cdots+(n-1)^2$ in this case.
 
-### When $n$ is even
+#### When $n$ is even
 
 $$
 \begin{aligned}
@@ -171,7 +171,7 @@ $$
 
 We can see that there is a strong relationship between the two cases. Actually, we only need to prove one of the double sum and the other one can be deduced easily.
 
-#### Lemma 2 $\sum_{i=1}^{\frac{n}{2}}(2i-1)^2=\frac{1}{6}n(n-1)(n+1)\ (n\ is\ even)$
+##### Lemma 2 $\sum_{i=1}^{\frac{n}{2}}(2i-1)^2=\frac{1}{6}n(n-1)(n+1)\ (n\ is\ even)$
 
 $$
 \begin{aligned}
@@ -183,7 +183,7 @@ $$
 \end{aligned}
 $$
 
-#### Lemma 3 $\sum_{i=1}^{\frac{n-1}{2}}(2i)^2=\frac{1}{6}n(n-1)(n+1)\ (n\ is\ odd)$
+##### Lemma 3 $\sum_{i=1}^{\frac{n-1}{2}}(2i)^2=\frac{1}{6}n(n-1)(n+1)\ (n\ is\ odd)$
 
 $$
 \begin{aligned}
@@ -231,7 +231,7 @@ $$
 \end{aligned}
 $$
 
-## Final result
+### Final result
 
 After a lot of calculations on some long equations, we finally get our elegant result.
 
@@ -259,7 +259,7 @@ $$x=\lfloor \frac{1}{8}n(n+2)(2n+1)\rfloor$$
 
 When $n=100$, the number is $256275$, which is the same as the result from our "double sum" Python program.
 
-# The ending and more
+## The ending and more
 
 By searching the sequence $1,5,13,27,\cdots$ on [oeis.org](https://oeis.org), you can find the sequence [A002717](https://oeis.org/A002717), which is exactly what we have proved today. There are some interesting information on that page about some other research on the sequence and the triangle counting problem.
 

@@ -58,7 +58,7 @@ theme = "LoveIt"
   # 网站默认主题样式 ("light", "dark", "auto")
   defaultTheme = "auto"
   # 公共 git 仓库路径，仅在 enableGitInfo 设为 true 时有效
-  gitRepo = ""
+  gitRepo = "http://github.com/HEIGE-PCloud/HEIGE-PCloud.github.io"
   #  哪种哈希函数用来 SRI, 为空时表示不使用 SRI
   # ("sha256", "sha384", "sha512", "md5")
   fingerprint = ""
@@ -117,7 +117,7 @@ theme = "LoveIt"
       # 标题名称
       name = "Planet Cloud"
       # 你可以在名称 (允许 HTML 格式) 之前添加其他信息, 例如图标
-      pre = ""
+      pre = "<i class=\"fa fa-cloud fa-fw\" aria-hidden=\"true\"></i>"
       # 你可以在名称 (允许 HTML 格式) 之后添加其他信息, 例如图标
       post = ""
       #  是否为标题显示打字机动画
@@ -329,7 +329,7 @@ theme = "LoveIt"
       Pinterest = false
       Tumblr = false
       HackerNews = false
-      Reddit = false
+      Reddit = true
       VK = false
       Buffer = false
       Xing = false
@@ -339,13 +339,13 @@ theme = "LoveIt"
       Digg = false
       Stumbleupon = false
       Flipboard = false
-      Weibo = true
+      Weibo = false
       Renren = false
-      Myspace = true
-      Blogger = true
+      Myspace = false
+      Blogger = false
       Baidu = false
       Odnoklassniki = false
-      Evernote = true
+      Evernote = false
       Skype = false
       Trello = false
       Mix = false
@@ -528,7 +528,7 @@ theme = "LoveIt"
       unsafe = true
   # 目录设置
   [markup.tableOfContents]
-    startLevel = 1
+    startLevel = 2
     endLevel = 6
 
 # 作者配置
