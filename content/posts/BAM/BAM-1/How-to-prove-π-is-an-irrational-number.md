@@ -130,7 +130,7 @@ Consider function $f(\pi-x)$.
 
 9. Show that $f(x)=f(\pi-x)$.
 
-10. Show that $f^{(k)}(\pi)=(-1)^{k}f^{(k)}(0)\isin\Z$
+10. Show that $f^{(k)}(\pi)=(-1)^{k}f^{(k)}(0)\isin\Z$.
 
 Let $F(x)=f(x)-f^{(2)}(x)+f^{(4)}(x)-f^{(6)}(x)+\cdots+(-1)^nf^{(2n)}(x)$.
 
@@ -142,9 +142,9 @@ Let $F(x)=f(x)-f^{(2)}(x)+f^{(4)}(x)-f^{(6)}(x)+\cdots+(-1)^nf^{(2n)}(x)$.
 
 When $0<x<\pi$, given that
 
-- If $f(x)>0$ then $\int_a ^b f(x) \operatorname{d}x>0$
-- If $0<f(x)<g(x)$ then $0<\int_a ^b f(x) \operatorname{d}x<\int_a ^b g(x) \operatorname{d}x$
-- $\lim\limits_{n\to+\infin}\frac{\pi^{n+1}p^n}{n!}=0$
+- If $f(x)>0$ then $\int_a ^b f(x) \operatorname{d}x>0$.
+- If $0<f(x)<g(x)$ then $0<\int_a ^b f(x) \operatorname{d}x<\int_a ^b g(x) \operatorname{d}x$.
+- $\lim\limits_{n\to+\infin}\frac{\pi^{n+1}p^n}{n!}=0$.
 
 14. Show $A>0$.
 
@@ -225,7 +225,7 @@ And we find that
 
 $$f(\pi-x)=\frac{(\pi-x)^nq^n(\pi-\pi+x)^n}{n!}=\frac{x^nq^n(\pi-x)^n}{n!}=f(x)$$
 
-Now we calculate the $k$th derivative of both $f(x)$ and $f(\pi-x)$:
+Now we calculate the $k$th derivative of both $f(x)$ and $f(\pi-x)$
 
 $$
 \begin{aligned}
