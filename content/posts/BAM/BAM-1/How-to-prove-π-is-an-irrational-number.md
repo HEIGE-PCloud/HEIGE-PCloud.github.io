@@ -1,6 +1,6 @@
 ---
 title: "How to prove π is an irrational number?"
-subtitle: "Beyond A Level Mathematics"
+subtitle: "Beyond A Level Mathematics #1"
 date: 2021-02-27T13:42:08Z
 tags: [Mathematics]
 categories: [Beyond A Level Mathematics]
