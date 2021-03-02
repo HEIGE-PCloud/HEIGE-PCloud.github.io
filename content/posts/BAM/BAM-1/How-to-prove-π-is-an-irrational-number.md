@@ -7,9 +7,19 @@ categories: [Beyond A Level Mathematics]
 draft: false
 ---
 
+## Preface
+
+You have leaned how to prove $\sqrt{2}$
+
+{{< admonition type=warning title="TODO" open=true >}}
+TODO: Preface
+{{< /admonition >}}
+
 ## How to define number $\pi$
 
-Unlike $\sqrt{2}$, which can be defined as the length of the diagonal of a square with side length $1$, number $\pi$ is related with a more complicated shape - circle. You might know that the perimeter of a circle is $2\pi r$ and its area is $\pi r^2$, so we can try to work out an approximation of $\pi$ with the help of a circle.
+Unlike $\sqrt{2}$, which can be defined as the length of the diagonal of a square with side length $1$, number $\pi$ is related with a more complicated shape - circle. You might know that the perimeter of a circle is $2\pi r$ and its area is $\pi r^2$, so we can try to work out the value of $\pi$ with the help of a circle.
+
+### Define by the area of a circle
 
 ![Approximate circle with polygons](/images/BAM/BAM-1/approximate-circle-with-polygons.svg "Approximate circle with polygons")
 
@@ -19,18 +29,19 @@ Note that we can approximate a circle with a regular polygon. When the number of
 
 And here is the question: given a regular polygon with $n$ sides, what is its area?
 
-![](/images/BAM/BAM-1/regular-decagon-with-triangles.svg)
+![A $n$-side polygon always  consists of $n$ triangles](/images/BAM/BAM-1/regular-decagon-with-triangles.svg "A $n$-side polygon always  consists of $n$ triangles")
 
 Note that with a $n$-side polygon, it always consists of $n$ triangles. So the angle $\alpha=\frac{n}{360\degree}$. And the overall area of the polygon is equal the sum of the $n$ triangles.
 
-![](/images/BAM/BAM-1/triangle.svg)
+![](/images/BAM/BAM-1/triangle.svg "$S_{\triangle}=\frac{1}{2}r^2\sin(\alpha)$")
 
-For each triangle its area $S_{\triangle}=\frac{1}{2}r^2\sin(\alpha)$. So the area of the regular polygon $S=n\times S_{\triangle}$.
+For each triangle, its area $S_{\triangle}=\frac{1}{2}r^2\sin(\alpha)$. So the area of the regular polygon $S=n\times S_{\triangle}=\frac{n}{2}r^2\sin(\frac{360}{n})$.
 
 {{< admonition type=tip title="Rewind" open=true >}}
 How to find the area of a triangle through two sides and their angle is covered in A Level Mathematics Student Book 1, Chapter 11 - Triangle geometry, Section 3 - Area of a triangle.
 {{< /admonition >}}
 
+So now we let the number of sides $n$ tends to infinity to get the exact value of $\pi$.
 
 $$
 \begin{aligned}
@@ -41,7 +52,55 @@ $$
 
 With this formula, we can work out the value of $\pi$ quite easily. Use your calculator to check, when $n=1000$, $\pi\approx3.141571983\cdots$, which is correct to $4$ decimal places. When you increase $n$, the result will be more accurate.
 
-> Extension: Use the perimeter of the polygon to work out another formula to approximate number $\pi$. 
+{{< admonition type=question title="Extension question" open=true >}}
+Use the perimeter of the polygon to work out another formula of number $\pi$.
+{{< /admonition >}}
+
+### Define by the equation of a circle
+
+We can put the circle in a coordinate axis, here is a unit circle with equation $x^2+y^2=1$. Let's see how this can help us.
+
+![](/images/BAM/BAM-1/unit-circle.svg "$x^2+y^2=1$")
+
+{{< admonition type=tip title="Rewind" open=true >}}
+The equation of a circle is covered in A Level Mathematics Student Book 1, Chapter 6 - Coordinate geometry, Section 4 - equation of a circle.
+{{< /admonition >}}
+
+The circle has a equation of $x^2+y^2=1$, if we only take the positive values of $y$, we can obtain the equation of the upper semicircle.
+
+$$
+\begin{aligned}
+    x^2+y^2=&1\\\\ 
+    y^2=&1-x^2\\\\ 
+    y=&\sqrt{1-x^2}
+\end{aligned}
+$$
+
+We can work out the area of the upper semicircle by integrating its equation. Because its area is half of the entire circle, so now the area of the circle can be calculated as well.
+
+$$\pi r^2=2\int_{-1}^{1}\sqrt{1-x^2}\operatorname{d}x$$
+
+And since it is an unit circle, its radius is $1$. So now we have another equation of $\pi$.
+
+$$\pi=2\int_{-1}^{1}\sqrt{1-x^2}\operatorname{d}x$$
+
+You can input this expression into your calculator, and a very accurate value of $\pi$ will be produced. If you want to calculate it by hand somehow, you can use the trapezium rule.
+
+{{< admonition type=tip title="Rewind" open=true >}}
+{{< admonition type=warning title="TODO" open=true >}}
+TODO: Trapezium rule
+{{< /admonition >}}
+{{< /admonition >}}
+
+### Rational or Irrational?
+
+You can see that there are several different ways to define and work out the value of the number $\pi$, but these methods dose not seem to help proving its irrationality at all. Actually, whether the number $\pi$ is rational is a very hard question. Around 250 BC, the ancient Greek have already had an algorithm to approximate $\pi$ with arbitrary accuracy. But not until 2000 years later, in 1761, the first proof of $\pi$ is an irrational number is proposed by Johann Heinrich Lambert.
+
+Lambert's proof is based on continued fraction expansion and is quite complex. Today, I would like to introduce another proof proposed by Ivan Niven published in June 1947. It is only one page and you can read it here.
+
+[A simple proof that $\pi$ is irrational](https://projecteuclid.org/journals/bulletin-of-the-american-mathematical-society-new-series/volume-53/issue-6/A-simple-proof-that-pi-is-irrational/bams/1183510788.full)
+
+But the actual ideas behind it is way more than one page, but don't worry, I will guide you through it. I have designed an approachable question so that you can first try to prove it by yourself before reading the explained proof. Hope you enjoy it.
 
 ## Try to prove it yourself!
 
@@ -158,9 +217,53 @@ Now if we consider the $k$th derivative of $f(0)$.
 
 **So for any $k\isin\mathbb{Z}$, $f^{(k)}(0)\isin\mathbb{Z}$.**
 
+Now let's consider function $f(\pi-x)$. First, we can simply transform the origin function into a more helpful shape.
+
+$$f(x)=\frac{x^n(p-qx)^n}{n!}=\frac{x^nq^n(\pi-x)^n}{n!}$$
+
+And we find that 
+
+$$f(\pi-x)=\frac{(\pi-x)^nq^n(\pi-\pi+x)^n}{n!}=\frac{x^nq^n(\pi-x)^n}{n!}=f(x)$$
+
+Now we calculate the $k$th derivative of both $f(x)$ and $f(\pi-x)$:
+
+$$
+\begin{aligned}
+    f(x)=&f(\pi-x)\\\\ 
+    f^{(k)}(x)=&(-1)^{k}f^{(k)}(\pi-x)
+\end{aligned}
+$$
+
+So $f^{(k)}(0)=(-1)^{k}f^{(k)}(\pi)$. As we have already known that $f^{(k)}(0)\isin\mathbb{Z}$, then **we can deduce that for any $k\isin\mathbb{Z}$, $f^{(k)}(\pi)\isin\mathbb{Z}$**.
+
+> Let's pause for a while at this point. You might feel quite messy now, thinking "Why we do this?", "Where does $f(x)$ come from?". Let's make it clear, all we have done by now are two things:
+> 1. We define $f(x)=\frac{x^n(p-qx)^n}{n!}(n\isin\mathbb{N})$.
+> 2. We have proved that $f^{(k)}(0)\isin\mathbb{Z}$, $f^{(k)}(\pi)\isin\mathbb{Z}$ for any $k\isin\mathbb{Z}$. This helps us to construct the contradiction later on.
+
+Now, let's keep moving on. We define a new function $F(x)$.
+
+$$F(x)=f(x)-f^{(2)}(x)+f^{(4)}(x)-f^{(6)}(x)+…+(-1)^nf^{(2n)}(x)$$
+
+The function $F(x)$ has some interesting properties.
+
+$$
+\begin{aligned}
+    F(x)+F''(x)=f(x)-&f^{(2)}(x)+f^{(4)}(x)-f^{(6)}(x)+…+(-1)^nf^{(2n)}(x)\\\\ 
+    +&f^{(2)}(x)-f^{(4)}(x)+f^{(6)}(x)+…-(-1)^{n}f^{(2n)}(x)+(-1)^{n+2}f^{(2n+2)}(x)
+\end{aligned}
+$$
+
+$$F(x)+F''(x)=f(x)+(-1)^{n+2}f^{(2n+2)}(x)$$
+
+As what we have proved before, because $2n+2>m$, $(-1)^{n+2}f^{(2n+2)}(x)=0$. So we have
+
+$$F(x)+F''(x)=f(x)$$
+
+{{< admonition type=warning title="TODO" open=true >}}
+TODO: 
+{{< /admonition >}}
 
 Given that $$
-
 Because $f(x)\sin(x)>0$, we can say $\int_0 ^\pi f(x)\sin(x)\operatorname{d}x=A>0$. 
 
 
