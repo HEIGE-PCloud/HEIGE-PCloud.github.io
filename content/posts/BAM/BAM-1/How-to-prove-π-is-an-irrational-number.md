@@ -356,7 +356,7 @@ Axiom 2 is proved.
 
 We need to prove $\lim\limits_{n\to+\infin}\frac{a^n}{n!}=0(a\isin\R^{+})$.
 
-{{< admonition type=info title="Beyond A Level Syllabus" open=true >}}
+{{< admonition type=info title="Beyond A Level Syllabus" open=false >}}
 
 Let $t\isin\natnums$ satisfies $t-1\leq a<t$, so $\frac{a}{t}<1$.
 
