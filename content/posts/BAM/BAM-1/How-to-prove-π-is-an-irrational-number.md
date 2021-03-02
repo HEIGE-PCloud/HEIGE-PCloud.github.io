@@ -1,5 +1,5 @@
 ---
-title: "How to prove $\\pi$ is an irrational number?"
+title: "How to prove π is an irrational number?"
 subtitle: "Beyond A Level Mathematics"
 date: 2021-02-27T13:42:08Z
 tags: [Mathematics]
