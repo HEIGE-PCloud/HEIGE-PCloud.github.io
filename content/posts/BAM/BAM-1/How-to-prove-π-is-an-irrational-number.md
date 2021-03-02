@@ -9,7 +9,7 @@ draft: false
 
 ## Preface
 
-You have leaned how to prove $\sqrt{2}$ is an irrational number, how about another famous number $\pi$? The number $\pi$ is very useful in daily life. You need it to calculate the perimeter and area of a circle, you need it in trigonometry and geometry as well. So you might have heard that just like $\sqrt{2}$, $\pi$ is an irrational number too. But how can you prove this? I think we should start the journey from an easier question: How to define number $\pi$?   
+You have leaned how to prove $\sqrt{2}$ is an irrational number, how about another famous number $\pi$? The number $\pi$ is very useful in our daily life. You need it to calculate the perimeter and area of a circle, you need it in trigonometry and geometry as well. You might have heard that just like $\sqrt{2}$, $\pi$ is an irrational number too. But how can you prove this? Let's start our journey from an easier question: How to define number $\pi$?   
 
 {{< admonition type=tip title="Rewind" open=true >}}
 How to prove $\sqrt{2}$ is an irrational number is covered in A Level Mathematics Student Book 2, Chapter 1 - Proof and mathematical communication, Section 2 - Proof by contradiction.
@@ -17,7 +17,7 @@ How to prove $\sqrt{2}$ is an irrational number is covered in A Level Mathematic
 
 ## How to define number $\pi$
 
-Unlike $\sqrt{2}$, which can be defined as the length of the diagonal of a square with side length $1$, number $\pi$ is related with a more complicated shape - circle. You might know that the perimeter of a circle is $2\pi r$ and its area is $\pi r^2$, so we can try to work out the value of $\pi$ with the help of a circle.
+Unlike $\sqrt{2}$, which can be defined as the length of the diagonal of a square with side length $1$, the number $\pi$ is related to a more complicated shape - circle. You might know that the perimeter of a circle is $2\pi r$ and its area is $\pi r^2$, so we can try to work out the value of $\pi$ with the help of a circle.
 
 ### Define by the area of a circle
 
@@ -80,7 +80,7 @@ We can work out the area of the upper semicircle by integrating its equation. Be
 
 $$\pi r^2=2\int_{-1}^{1}\sqrt{1-x^2}\operatorname{d}x$$
 
-And since it is an unit circle, its radius is $1$. So now we have another equation of $\pi$.
+And since it is an unit circle, its radius is $1$. So we can have another equation of $\pi$.
 
 $$\pi=2\int_{-1}^{1}\sqrt{1-x^2}\operatorname{d}x$$
 
@@ -92,7 +92,7 @@ The trapezium rule is covered in A Level Mathematics Student Book 2, Chapter 15 
 
 ### Rational or Irrational?
 
-You can see that there are several different ways to define and work out the value of the number $\pi$, but these methods dose not seem to help proving its irrationality at all. Actually, whether the number $\pi$ is rational is a very hard question. Around 250 BC, the ancient Greek have already had an algorithm to approximate $\pi$ with arbitrary accuracy. But not until 2000 years later, in 1761, the first proof of $\pi$ is an irrational number is proposed by Johann Heinrich Lambert.
+You can see that there are several different ways to define and work out the value of the number $\pi$, but these methods dose not seem to help proving its irrationality at all. Actually, whether the number $\pi$ is rational is a very hard question. Around 250 BC, the ancient Greeks have already had an algorithm to approximate $\pi$ with arbitrary accuracy. But not until 2000 years later, in 1761, the first proof of $\pi$ is an irrational number is proposed by Johann Heinrich Lambert.
 
 Lambert's proof is based on continued fraction expansion and is quite complex. Today, I would like to introduce another proof proposed by Ivan Niven published in June 1947. It is only one page and you can read it here.
 
@@ -102,7 +102,7 @@ But the actual ideas behind it is way more than one page, but don't worry, I wil
 
 ## Try to prove it yourself!
 
-> This question is designed to split the original long proof into small and approachable questions. Just take it as a longer STEP question. Through proofing by your own hands, you can better appreciate the beauty of mathematics. You can check your answer by reading the explained proof below, or you can just skip it if you want. But I still strongly recommend you to have a go by yourself!😀
+> This question is designed to split the original long proof into small and approachable questions. Just take it as a longer STEP question. Through proving by your own hands, you can better appreciate the beauty of mathematics. You can check your answer by reading the explained proof below, or you can just skip it if you want. But I still strongly recommend you to have a go by yourself!😀
 
 Assume that $\pi=\frac{p}{q}$ where $p$ and $q$ are integers with no common factors.
 
@@ -122,7 +122,7 @@ Consider the $k^{th}$ derivative $(\frac{ax^m}{n!})^{(k)}(k\isin\natnums)$.
 
 6. When $k<m$, find $(\frac{ax^m}{n!})^{(k)}$.
 
-7. Show that $f^{(k)}(0)\isin\Z$ for all $k\isin\Z$.
+7. Show that $f^{(k)}(0)\isin\Z$ for all $k\isin\natnums$.
 
 Consider function $f(\pi-x)$.
 
@@ -215,7 +215,7 @@ Now if we consider the $k$th derivative of $f(0)$.
 
 - When $k<m$, $f^{(k)}(0)=0+0+\cdots+0=0$ is an integer.
 
-**So for any $k\isin\Z$, $f^{(k)}(0)\isin\Z$.**
+**So for any $k\isin\natnums$, $f^{(k)}(0)\isin\Z$.**
 
 Now let's consider function $f(\pi-x)$. First, we can simply transform the origin function into a more helpful shape.
 
@@ -234,11 +234,11 @@ $$
 \end{aligned}
 $$
 
-So $f^{(k)}(0)=(-1)^{k}f^{(k)}(\pi)$. As we have already known that $f^{(k)}(0)\isin\Z$, then **we can deduce that for any $k\isin\Z$, $f^{(k)}(\pi)\isin\Z$**.
+So $f^{(k)}(0)=(-1)^{k}f^{(k)}(\pi)$. As we have already known that $f^{(k)}(0)\isin\Z$, then **we can deduce that for any $k\isin\natnums$, $f^{(k)}(\pi)\isin\Z$**.
 
 > Let's pause for a while at this point. You might feel quite messy now, thinking "Why we do this?", "Where does $f(x)$ come from?". Let's make it clear, all we have done by now are two things:
 > 1. We **define** $f(x)=\frac{x^n(p-qx)^n}{n!}(n\isin\natnums)$.
-> 2. We have **proved** that $f^{(k)}(0)\isin\Z$, $f^{(k)}(\pi)\isin\Z$ for any $k\isin\Z$. This helps us to construct the contradiction later on.
+> 2. We have **proved** that $f^{(k)}(0)\isin\Z$, $f^{(k)}(\pi)\isin\Z$ for any $k\isin\natnums$. This helps us to construct the contradiction later on.
 
 Now, let's keep moving on. We define a new function $F(x)$.
 
@@ -308,7 +308,7 @@ We need to prove for $a<b$, if $f(x)>0$ then $\int_a ^b f(x) \operatorname{d}x>0
 
 {{< admonition type=info title="Beyond A Level Syllabus" open=false >}}
 
-The strict proof of this result contains topics beyond the A Level syllabus. You can just skip it if it does not make any sense to you. Or you can think that when the value of a function is always bigger than $0$, then the area between the function and the x-axis is always positive as well.
+The strict proof of this result contains topics beyond the A Level syllabus. You can just skip it if it does not make any sense to you. Or you can think that when the value of a function is always bigger than $0$, then the area between the function and the x-axis will always be positive.
 
 To prove it strictly, a good approach is to go back to the definition of the definite integral.
 
@@ -353,10 +353,6 @@ $$
 Axiom 2 is proved.
 
 #### Axiom 3
-
-{{< admonition type=warning title="TODO" open=true >}}
-TODO: Axiom 3
-{{< /admonition >}}
 
 We need to prove $\lim\limits_{n\to+\infin}\frac{a^n}{n!}=0(a\isin\R^{+})$.
 
@@ -416,14 +412,22 @@ Assume that $\pi=\frac{p}{q}$ where $p$ and $q$ are integers with no common fact
 
 And thus we have proved that $\pi$ is irrational and cannot be written as $\frac{p}{q}$.
 
-## Historical researches
+## Further reading
 
-{{< admonition type=warning title="TODO" open=true >}}
-TODO: Historical researches
+1. [***Numbers***](https://books.google.com/books?id=Z53SBwAAQBAJ&pg=PA123): This book explains more ways of introducing the number $\pi$.
+2. [***A simple proof that $\pi$ is irrational***](https://projecteuclid.org/journals/bulletin-of-the-american-mathematical-society-new-series/volume-53/issue-6/A-simple-proof-that-pi-is-irrational/bams/1183510788.full): The original proof from Ivan Niven.
+3. [***Proof that $\pi$ is irrational***](https://en.wikipedia.org/wiki/Proof_that_%CF%80_is_irrational): This page summarizes some other ways of proving $\pi$ is irrational.
+
+## Extension problem: How about the number $e$?
+
+You have learned something about the number $e=2.71828$ when you solve logarithms and exponential models questions.
+
+{{< admonition type=tip title="Rewind" open=true >}}
+The natural logarithm is covered in A Level Mathematics Student Book 1, Chapter 7 - Logarithms.
+
+The exponential models is covered in A Level Mathematics Student Book 1, Chapter 8 - Exponential models.
 {{< /admonition >}}
 
-## Extension problem: How about number $e$?
+The number $e$ is another irrational number. How can you prove it?
 
-{{< admonition type=warning title="TODO" open=true >}}
-TODO: Extension
-{{< /admonition >}}
+Or more interestingly, consider $\sqrt{e}$, $e^2$, $e^e$, $e^{\pi}$, are they irrational numbers as well?
