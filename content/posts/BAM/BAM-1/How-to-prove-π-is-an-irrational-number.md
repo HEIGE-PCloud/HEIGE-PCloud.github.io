@@ -9,10 +9,10 @@ draft: false
 
 ## Preface
 
-You have leaned how to prove $\sqrt{2}$
+You have leaned how to prove $\sqrt{2}$ is an irrational number, how about another famous number $\pi$? The number $\pi$ is very useful in daily life. You need it to calculate the perimeter and area of a circle, you need it in trigonometry and geometry as well. So you might have heard that just like $\sqrt{2}$, $\pi$ is an irrational number too. But how can you prove this? I think we should start the journey from an easier question: How to define number $\pi$?   
 
-{{< admonition type=warning title="TODO" open=true >}}
-TODO: Preface
+{{< admonition type=tip title="Rewind" open=true >}}
+How to prove $\sqrt{2}$ is an irrational number is covered in A Level Mathematics Student Book 2, Chapter 1 - Proof and mathematical communication, Section 2 - Proof by contradiction.
 {{< /admonition >}}
 
 ## How to define number $\pi$
@@ -31,7 +31,7 @@ And here is the question: given a regular polygon with $n$ sides, what is its ar
 
 ![A $n$-side polygon always  consists of $n$ triangles](/images/BAM/BAM-1/regular-decagon-with-triangles.svg "A $n$-side polygon always  consists of $n$ triangles")
 
-Note that with a $n$-side polygon, it always consists of $n$ triangles. So the angle $\alpha=\frac{n}{360\degree}$. And the overall area of the polygon is equal the sum of the $n$ triangles.
+Note that with a $n$-side polygon, it always consists of $n$ triangles. So the angle $\alpha=\frac{n}{360\degree}$. And the overall area of the polygon is equal to the sum of the area of the $n$ triangles.
 
 ![](/images/BAM/BAM-1/triangle.svg "$S_{\triangle}=\frac{1}{2}r^2\sin(\alpha)$")
 
@@ -87,9 +87,7 @@ $$\pi=2\int_{-1}^{1}\sqrt{1-x^2}\operatorname{d}x$$
 You can input this expression into your calculator, and a very accurate value of $\pi$ will be produced. If you want to calculate it by hand somehow, you can use the trapezium rule.
 
 {{< admonition type=tip title="Rewind" open=true >}}
-{{< admonition type=warning title="TODO" open=true >}}
-TODO: Trapezium rule
-{{< /admonition >}}
+The trapezium rule is covered in A Level Mathematics Student Book 2, Chapter 15 - Numerical integration, Section 2 - The trapezium rule.
 {{< /admonition >}}
 
 ### Rational or Irrational?
@@ -108,13 +106,13 @@ But the actual ideas behind it is way more than one page, but don't worry, I wil
 
 Assume that $\pi=\frac{p}{q}$ where $p$ and $q$ are integers with no common factors.
 
-Let $f(x)=\frac{x^n(p-qx)^n}{n!}(n\isin\mathbb{N})$
+Let $f(x)=\frac{x^n(p-qx)^n}{n!}(n\isin\natnums)$
 
 1. Expand $(p-qx)^n$, use the symbol $\sum$ to write up your answer.
 
-2. Show that $f(x)=\sum\limits_{m=n}^{2n}\frac{a_mx^m}{n!}(a_m,m\isin\mathbb{Z},n\leq m\leq 2n)$. Express $a_m$ in terms of $m,n,p,q$.
+2. Show that $f(x)=\sum\limits_{m=n}^{2n}\frac{a_mx^m}{n!}(a_m,m\isin\Z,n\leq m\leq 2n)$. Express $a_m$ in terms of $m,n,p,q$.
 
-Consider the $k^{th}$ derivative $(\frac{ax^m}{n!})^{(k)}(k\isin\mathbb{N})$.
+Consider the $k^{th}$ derivative $(\frac{ax^m}{n!})^{(k)}(k\isin\natnums)$.
 
 3. When $k=1$, find $(\frac{ax^m}{n!})'$.
 
@@ -124,7 +122,7 @@ Consider the $k^{th}$ derivative $(\frac{ax^m}{n!})^{(k)}(k\isin\mathbb{N})$.
 
 6. When $k<m$, find $(\frac{ax^m}{n!})^{(k)}$.
 
-7. Show that $f^{(k)}(0)\isin\mathbb{Z}$ for all $k\isin\mathbb{Z}$.
+7. Show that $f^{(k)}(0)\isin\Z$ for all $k\isin\Z$.
 
 Consider function $f(\pi-x)$.
 
@@ -132,21 +130,21 @@ Consider function $f(\pi-x)$.
 
 9. Show that $f(x)=f(\pi-x)$.
 
-10. Show that $f^{(k)}(\pi)=(-1)^{k}f^{(k)}(0)\isin\mathbb{Z}$
+10. Show that $f^{(k)}(\pi)=(-1)^{k}f^{(k)}(0)\isin\Z$
 
-Let $F(x)=f(x)-f^{(2)}(x)+f^{(4)}(x)-f^{(6)}(x)+...+(-1)^nf^{(2n)}(x)$.
+Let $F(x)=f(x)-f^{(2)}(x)+f^{(4)}(x)-f^{(6)}(x)+\cdots+(-1)^nf^{(2n)}(x)$.
 
 11. Show that $F(x)+F''(x)=f(x)$.
 
 12. Show that $\frac{\operatorname{d}}{\operatorname{d}x}[F'(x)\sin(x)-F(x)\cos(x)]=f(x)\sin(x)$.
 
-13. Show that $A=\int_0 ^\pi f(x)\sin(x)\operatorname{d}x=F(0)+F(\pi)\isin\mathbb{Z}$.
+13. Show that $A=\int_0 ^\pi f(x)\sin(x)\operatorname{d}x=F(0)+F(\pi)\isin\Z$.
 
 When $0<x<\pi$, given that
 
 - If $f(x)>0$ then $\int_a ^b f(x) \operatorname{d}x>0$
 - If $0<f(x)<g(x)$ then $0<\int_a ^b f(x) \operatorname{d}x<\int_a ^b g(x) \operatorname{d}x$
-- $\lim\limits_{n\rightarrow+\infin}\frac{\pi^{n+1}p^n}{n!}=0$
+- $\lim\limits_{n\to+\infin}\frac{\pi^{n+1}p^n}{n!}=0$
 
 14. Show $A>0$.
 
@@ -158,9 +156,11 @@ When $0<x<\pi$, given that
 
 We use proof by contradiction to prove that $\pi$ is an irrational number.
 
+### Prove that $A$ is an integer
+
 So at the first step, we assume that $\pi=\frac{p}{q}$ where $p$ and $q$ are integers with no common factors. This step is exactly the same when you try to proof $\sqrt{2}$ is irrational. But unlike $\sqrt{2}$, which you can simply square it to get a nice integer $2$, the number $\pi$ is actually a lot harder to work with. So if the next few steps does not make a lot of sense for you, just keep on reading, and you will get there at the end!
 
-Next, we construct a function $f(x)=\frac{x^n(p-qx)^n}{n!}(n\isin\mathbb{N})$. Note that the term $(p-qx)^n$ can be expanded by using the binomial expansion.
+Next, we construct a function $f(x)=\frac{x^n(p-qx)^n}{n!}(n\isin\natnums)$. Note that the term $(p-qx)^n$ can be expanded by using the binomial expansion.
 
 {{< admonition type=tip title="Rewind" open=true >}}
 The binomial expansion is covered in A Level Mathematics Student Book 1, Chapter 9 - Binomial expansion, Section 1 - The binomial theorem.
@@ -178,7 +178,7 @@ So that we can substitute this result back to function $f(x)$.
 
 $$
 \begin{aligned}
-    f(x)=&\frac{x^n(p-qx)^n}{n!}(n\isin\mathbb{N})\\\\ 
+    f(x)=&\frac{x^n(p-qx)^n}{n!}(n\isin\natnums)\\\\ 
         =&\frac{x^n\sum\limits_{k=0}^{n}\binom{n}{k}p^{n-k}(-q)^{k}x^{k}}{n!}\\\\ 
         =&\sum_{k=0} ^{n}\frac{\binom{n}{k}p^{n-k}(-q)^{k}x^{k+n}}{n!}
 \end{aligned}
@@ -195,7 +195,7 @@ $$
 
 Where
 
-$$a_m=\binom{n}{m-n}p^{2n-m}(-q)^{m-n}\isin \mathbb{Z}$$
+$$a_m=\binom{n}{m-n}p^{2n-m}(-q)^{m-n}\isin \Z$$
 
 Why we say this is a better form? It is because that **the coefficient $a_m$ before $x^m$ is an integer**. This property will be used later.
 
@@ -215,7 +215,7 @@ Now if we consider the $k$th derivative of $f(0)$.
 
 - When $k<m$, $f^{(k)}(0)=0+0+\cdots+0=0$ is an integer.
 
-**So for any $k\isin\mathbb{Z}$, $f^{(k)}(0)\isin\mathbb{Z}$.**
+**So for any $k\isin\Z$, $f^{(k)}(0)\isin\Z$.**
 
 Now let's consider function $f(\pi-x)$. First, we can simply transform the origin function into a more helpful shape.
 
@@ -234,11 +234,11 @@ $$
 \end{aligned}
 $$
 
-So $f^{(k)}(0)=(-1)^{k}f^{(k)}(\pi)$. As we have already known that $f^{(k)}(0)\isin\mathbb{Z}$, then **we can deduce that for any $k\isin\mathbb{Z}$, $f^{(k)}(\pi)\isin\mathbb{Z}$**.
+So $f^{(k)}(0)=(-1)^{k}f^{(k)}(\pi)$. As we have already known that $f^{(k)}(0)\isin\Z$, then **we can deduce that for any $k\isin\Z$, $f^{(k)}(\pi)\isin\Z$**.
 
 > Let's pause for a while at this point. You might feel quite messy now, thinking "Why we do this?", "Where does $f(x)$ come from?". Let's make it clear, all we have done by now are two things:
-> 1. We define $f(x)=\frac{x^n(p-qx)^n}{n!}(n\isin\mathbb{N})$.
-> 2. We have proved that $f^{(k)}(0)\isin\mathbb{Z}$, $f^{(k)}(\pi)\isin\mathbb{Z}$ for any $k\isin\mathbb{Z}$. This helps us to construct the contradiction later on.
+> 1. We **define** $f(x)=\frac{x^n(p-qx)^n}{n!}(n\isin\natnums)$.
+> 2. We have **proved** that $f^{(k)}(0)\isin\Z$, $f^{(k)}(\pi)\isin\Z$ for any $k\isin\Z$. This helps us to construct the contradiction later on.
 
 Now, let's keep moving on. We define a new function $F(x)$.
 
@@ -255,26 +255,78 @@ $$
 
 $$F(x)+F''(x)=f(x)+(-1)^{n+2}f^{(2n+2)}(x)$$
 
-As what we have proved before, because $2n+2>m$, $(-1)^{n+2}f^{(2n+2)}(x)=0$. So we have
+As what we have proved before, because $2n+2>m$, so $(-1)^{n+2}f^{(2n+2)}(x)=0$. So we have
 
 $$F(x)+F''(x)=f(x)$$
 
-{{< admonition type=warning title="TODO" open=true >}}
-TODO: 
-{{< /admonition >}}
+Now we consider the number $A=\int_0 ^\pi f(x)\sin(x)\operatorname{d}x$. To work out this integral, we shall do it inversely by considering this derivative $\frac{\operatorname{d}}{\operatorname{d}x}[F'(x)\sin(x)-F(x)\cos(x)]$.
 
-Given that $$
-Because $f(x)\sin(x)>0$, we can say $\int_0 ^\pi f(x)\sin(x)\operatorname{d}x=A>0$. 
+$$
+\begin{aligned}
+    \frac{\operatorname{d}}{\operatorname{d}x}[F'(x)\sin(x)-F(x)\cos(x)]=&F''(x)\sin(x)+F'(x)\cos(x)-F'(x)\cos(x)+F(x)\sin(x)\\\\ 
+    =&F''(x)\sin(x)+F(x)\sin(x)\\\\ 
+    =&\sin(x)(F(x)+F''(x))\\\\ 
+    =&f(x)\sin(x)
+\end{aligned}
+$$
 
+Now we have found the primitive of $f(x)\sin(x)$. So we can work out the definite integral.
 
-This result is not so obvious, but to proof it strictly need something beyond the A Level syllabus. For now,  you can think of a function which is always positive in its domain, so the area between the function and the x-axis is always positive, so its definite integral is positive.
+$$
+\begin{aligned}
+    \int_0 ^\pi f(x)\sin(x)\operatorname{d}x=&\left[F'(x)\sin(x)-F(x)\cos(x)\right]_{0}^{\pi}\\\\ 
+    =&F'(\pi)\sin(\pi)-F(\pi)\cos(\pi)-F'(0)\sin(0)+F(0)\cos(0)
+    =&F(0)+F(\pi)
+\end{aligned}
+$$
+
+$$
+\begin{aligned}
+    F(0)=&\sum_{i=0}^{n}(-1)^{i}f^{(2i)}(0)\\\\ 
+    F(\pi)=&\sum_{i=0}^{n}(-1)^{i}f^{(2i)}(\pi)\\\\ 
+    \because& f^{(k)}(0)\isin\Z\\\\ 
+    \because& f^{(k)}(\pi)\isin\Z\\\\ 
+    \therefore& F(0), F(\pi)\isin\Z\\\\ 
+    \therefore& A=F(0)+F(\pi)\isin\Z
+\end{aligned}
+$$
+
+Now we have shown that $A$ is an integer. And then we will try to show that $A$ cannot be an integer, so the contradiction is constructed.
+
+### Prove that $A$ is not an integer
+
+Before we can do that, there are three axioms we need to prove in advance:
+1. If $f(x)>0$ then $\int_a ^b f(x) \operatorname{d}x>0$
+2. If $0<f(x)<g(x)$ then $0<\int_a ^b f(x) \operatorname{d}x<\int_a ^b g(x) \operatorname{d}x$
+3. $\lim\limits_{n\to+\infin}\frac{\pi^{n+1}p^n}{n!}=0$
+
+Unluckily, to proof them strictly need something beyond the A Level syllabus. You can read the strict proof bellow if you are interested, or you can just take them for now and keep moving on.
+
+#### Axiom 1
+
+We need to prove for $a<b$, if $f(x)>0$ then $\int_a ^b f(x) \operatorname{d}x>0$.
 
 {{< admonition type=info title="Beyond A Level Syllabus" open=false >}}
 
-The strict proof of this result contains topics beyond the A Level syllabus. You can just skip it if it does not make any sense to you.
-$$f(x) > 0 \rightarrow\int_a ^b f(x) \operatorname{d}x >0$$
+The strict proof of this result contains topics beyond the A Level syllabus. You can just skip it if it does not make any sense to you. Or you can think that when the value of a function is always bigger than $0$, then the area between the function and the x-axis is always positive as well.
 
-Note that the inverse proposition is not true. Think about $f(x)=\sin(x)$:
+To prove it strictly, a good approach is to go back to the definition of the definite integral.
+
+Suppose $f(x)$ is a bounded function with domain $[a,b]$. Randomly choose a partition of interval $[a,b]$, we call it
+
+$$P:a=x_0<x_1<\cdots<x_n=b$$
+
+Randomly choose point $\xi_i\isin[x_{i-1},x_i]$. The length of the interval $[x_{i-1},x_i]$ is $\Delta x_i=x_i-x_{i-1}$, let $\lambda=\max\limits_{1\leq i\leq n}(\Delta x_i)$. When $\lambda\to0$, the limit
+
+$$\lim_{\lambda\to0}\sum_{i=0}^{n}f(\xi_i)\Delta x_i=\int_{a}^{b}f(x)\operatorname{d}x$$
+
+And now we have $f(x)>0$, $\Delta x_i>0$. So
+
+$$\int_{a}^{b}f(x)\operatorname{d}x=\lim_{\lambda\to0}\sum_{i=0}^{n}f(\xi_i)\Delta x_i>0$$
+
+Axiom 1 is proved.
+
+Note that the inverse proposition is not true. Think about $f(x)=\sin(x)$
 
 $$\int_0 ^{\frac{3\pi}{2}}\sin(x)\operatorname{d}x=1>0$$
 
@@ -282,31 +334,81 @@ But $\sin(\frac{3\pi}{2})=-1<0$.
 
 {{< /admonition >}}
 
-Note that when $0<x<\pi$, we have $f(x)=\frac{x^n(p-qx)^n}{n!}<\frac{\pi^np^n}{n!}$ and $\sin(x)\leq 1$. So,
 
-$$A=\int_0 ^\pi f(x)\sin(x)\operatorname{d}x<\int_0 ^\pi \frac{\pi^np^n}{n!}\times 1\operatorname{d}x$$
+#### Axiom 2
 
-Show that $\int_0 ^\pi \frac{\pi^np^n}{n!}\times 1\operatorname{d}x=\frac{\pi^{n+1}p^n}{n!}$.
+We need to prove if $0<f(x)<g(x)$ then $0<\int_a ^b f(x) \operatorname{d}x<\int_a ^b g(x) \operatorname{d}x$. With the help of Axiom 1, this part is relatively easy.
 
-Note that
+Let $h(x)=g(x)-f(x)>0$, based on Axiom 1,
 
-$$\lim\limits_{n\rightarrow+\infin}\frac{\pi^{n+1}p^n}{n!}=0$$
+$$
+\begin{aligned}
+    \int_{a}^{b}h(x)\operatorname{d}x&>0\\\\ 
+    \int_{a}^{b}g(x)-f(x)\operatorname{d}x&>0\\\\ 
+    \int_{a}^{b}g(x)\operatorname{d}x-\int_{a}^{b}f(x)\operatorname{d}x&>0\\\\ 
+    0<\int_a ^b f(x) \operatorname{d}x&<\int_a ^b g(x) \operatorname{d}x
+\end{aligned}
+$$
 
-{{< admonition type=info title="Beyond A Level Syllabus" open=false >}}
+Axiom 2 is proved.
 
-$$\lim_{n\rightarrow+\infin}\frac{a^n}{n!}=0(a\isin\mathbb{R})$$
+#### Axiom 3
+
+{{< admonition type=warning title="TODO" open=true >}}
+TODO: Axiom 3
+{{< /admonition >}}
+
+We need to prove $\lim\limits_{n\to+\infin}\frac{a^n}{n!}=0(a\isin\R^{+})$.
+
+{{< admonition type=info title="Beyond A Level Syllabus" open=true >}}
+
+Let $t\isin\natnums$ satisfies $t-1\leq a<t$, so $\frac{a}{t}<1$.
+
+$$\lim_{n\to+\infty}\frac{a^n}{n}=\lim_{n\to+\infty}\frac{a}{n}\frac{a}{n-1}\cdots\frac{a}{t}\frac{a}{t-1}\cdots\frac{a}{2}\frac{a}{1}$$
+
+Let $K=\frac{a}{t-1}\cdots\frac{a}{2}\frac{a}{1}$ is a constant.
+
+$$0<\lim_{n\to+\infty}\frac{a}{n}\frac{a}{n-1}\cdots\frac{a}{t}<\lim_{n\to+\infty}\left(\frac{a}{t}\right)^{n-t+1}=0$$
+
+Based on the squeeze theorem, we have
+
+$$\lim\limits_{n\to+\infin}\frac{a^n}{n!}=K\times\lim_{n\to+\infty}\frac{a}{n}\frac{a}{n-1}\cdots\frac{a}{t}=K\times0=0$$
+
+Axiom 3 is proved.
 
 {{< /admonition >}}
 
-So when $n$ is sufficient large, we have
+#### Determine the range of $A$
 
-$$A=\int_0 ^\pi f(x)\sin(x)\operatorname{d}x<\int_0 ^\pi \frac{\pi^np^n}{n!}\times 1\operatorname{d}x=\frac{\pi^{n+1}p^n}{n!}<1$$
+When $0<x<\pi$, $x^n>0$, $q^n>0$, $(\pi-x)^n>0$, $n!>0$, $\sin(x)>0$ so $f(x)\sin(x)>0$. Based on Axiom 1, we can say
 
-So finally, $A$ satisfies
+$$A=\int_0 ^\pi f(x)\sin(x)\operatorname{d}x>0$$
+
+Note that when $0<x<\pi$, we have $f(x)=\frac{x^n(p-qx)^n}{n!}<\frac{\pi^np^n}{n!}$ and $\sin(x)\leq 1$.
+
+$$f(x)\sin(x)<\frac{\pi^np^n}{n!}\times1$$
+
+And based on Axiom 2, we have
+
+$$A=\int_0 ^\pi f(x)\sin(x)\operatorname{d}x<\int_0 ^\pi \frac{\pi^np^n}{n!}\times 1\operatorname{d}x=\frac{\pi^{n+1}p^n}{n!}$$
+
+$$\therefore A<\frac{\pi^{n+1}p^n}{n!}$$
+
+And based on Axiom 3, we have
+
+$$\lim\limits_{n\to+\infin}\frac{\pi^{n+1}p^n}{n!}=\pi\times\lim\limits_{n\to+\infin}\frac{(\pi p)^n}{n!}=\pi\times0=0$$
+
+So we can say $\exist N>0,\forall n(n>N), \frac{\pi^{n+1}p^n}{n!}<1$, which means when $n$ gets sufficiently large, $\frac{\pi^{n+1}p^n}{n!}$ will smaller than $1$. And now we have 
+
+$$A<\frac{\pi^{n+1}p^n}{n!}<1$$
+
+So finally, the range of $A$ is
 
 $$0<A<1$$
 
-But in $(14)$, you have proved that $A=\int_0 ^\pi f(x)\sin(x)\operatorname{d}x=F(0)+F(\pi)\isin\mathbb{Z}$, we all know that there is no integer between 0 and 1, here the contradiction arises. So our assumption is wrong.
+### Construct the contradiction
+
+We have proved that $A=\int_0 ^\pi f(x)\sin(x)\operatorname{d}x=F(0)+F(\pi)\isin\Z$ and $A$ has the range $0<A<1$. We all know that there is no integer between $0$ and $1$, here the contradiction arises, which means our assumption is wrong.
 
 {{< admonition type=quote title="Assumption at the beginning" open=true >}}
 Assume that $\pi=\frac{p}{q}$ where $p$ and $q$ are integers with no common factors.
@@ -316,6 +418,12 @@ And thus we have proved that $\pi$ is irrational and cannot be written as $\frac
 
 ## Historical researches
 
-TODO
+{{< admonition type=warning title="TODO" open=true >}}
+TODO: Historical researches
+{{< /admonition >}}
 
 ## Extension problem: How about number $e$?
+
+{{< admonition type=warning title="TODO" open=true >}}
+TODO: Extension
+{{< /admonition >}}
