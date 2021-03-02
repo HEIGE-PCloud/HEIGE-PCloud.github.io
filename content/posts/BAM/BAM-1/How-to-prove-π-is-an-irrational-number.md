@@ -98,7 +98,7 @@ Lambert's proof is based on continued fraction expansion and is quite complex. T
 
 [A simple proof that $\pi$ is irrational](https://projecteuclid.org/journals/bulletin-of-the-american-mathematical-society-new-series/volume-53/issue-6/A-simple-proof-that-pi-is-irrational/bams/1183510788.full)
 
-But the actual ideas behind it is way more than one page, but don't worry, I will guide you through it. I have designed an approachable question so that you can first try to prove it by yourself before reading the explained proof. Hope you enjoy it.
+However, the actual ideas behind it is way more than one page, but don't worry, I will guide you through it. I have designed an approachable question so that you can first try to prove it by yourself before reading the explained proof. Hope you enjoy it.
 
 ## Try to prove it yourself!
 
@@ -112,7 +112,7 @@ Let $f(x)=\frac{x^n(p-qx)^n}{n!}(n\isin\natnums)$
 
 2. Show that $f(x)=\sum\limits_{m=n}^{2n}\frac{a_mx^m}{n!}(a_m,m\isin\Z,n\leq m\leq 2n)$. Express $a_m$ in terms of $m,n,p,q$.
 
-Consider the $k^{th}$ derivative $(\frac{ax^m}{n!})^{(k)}(k\isin\natnums)$.
+Consider the $k$th derivative $(\frac{ax^m}{n!})^{(k)}(k\isin\natnums)$.
 
 3. When $k=1$, find $(\frac{ax^m}{n!})'$.
 
@@ -420,7 +420,7 @@ And thus we have proved that $\pi$ is irrational and cannot be written as $\frac
 
 ## Extension problem: How about the number $e$?
 
-You have learned something about the number $e=2.71828$ when you solve logarithms and exponential models questions.
+You have learned something about the number $e=2.71828\cdots$ when you solve logarithms and exponential models questions.
 
 {{< admonition type=tip title="Rewind" open=true >}}
 The natural logarithm is covered in A Level Mathematics Student Book 1, Chapter 7 - Logarithms.
