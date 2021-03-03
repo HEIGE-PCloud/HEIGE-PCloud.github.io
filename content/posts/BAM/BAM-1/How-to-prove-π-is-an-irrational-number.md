@@ -263,7 +263,8 @@ Now we consider the number $A=\int_0 ^\pi f(x)\sin(x)\operatorname{d}x$. To work
 
 $$
 \begin{aligned}
-    \frac{\operatorname{d}}{\operatorname{d}x}[F'(x)\sin(x)-F(x)\cos(x)]=&F''(x)\sin(x)+F'(x)\cos(x)-F'(x)\cos(x)+F(x)\sin(x)\\\\ 
+    &\frac{\operatorname{d}}{\operatorname{d}x}[F'(x)\sin(x)-F(x)\cos(x)]\\\\ 
+    =&F''(x)\sin(x)+F'(x)\cos(x)-F'(x)\cos(x)+F(x)\sin(x)\\\\ 
     =&F''(x)\sin(x)+F(x)\sin(x)\\\\ 
     =&\sin(x)(F(x)+F''(x))\\\\ 
     =&f(x)\sin(x)
