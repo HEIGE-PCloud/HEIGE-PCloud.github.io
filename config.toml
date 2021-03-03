@@ -351,7 +351,7 @@ theme = "LoveIt"
       Mix = false
     #  评论系统设置
     [params.page.comment]
-      enable = false
+      enable = true
       # Disqus 评论系统设置
       [params.page.comment.disqus]
         # 
@@ -368,16 +368,16 @@ theme = "LoveIt"
         clientSecret = ""
       # Valine 评论系统设置
       [params.page.comment.valine]
-        enable = false
-        appId = ""
-        appKey = ""
+        enable = true
+        appId = "aM7gLUeWp8it1Efrcp3rm8TB-MdYXbMMI"
+        appKey = "Xn1xlYj3Fm5gvsYG3WyQpaix"
         placeholder = ""
         avatar = "mp"
         meta= ""
         pageSize = 10
         lang = ""
-        visitor = true
-        recordIP = true
+        visitor = false
+        recordIP = false
         highlight = true
         enableQQ = false
         serverURLs = ""
