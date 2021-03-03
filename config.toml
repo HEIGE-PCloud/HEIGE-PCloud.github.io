@@ -351,7 +351,7 @@ theme = "LoveIt"
       Mix = false
     #  评论系统设置
     [params.page.comment]
-      enable = true
+      enable = false
       # Disqus 评论系统设置
       [params.page.comment.disqus]
         # 
@@ -396,7 +396,7 @@ theme = "LoveIt"
         languageCode = "zh_CN"
       #  Telegram Comments 评论系统设置
       [params.page.comment.telegram]
-        enable = true
+        enable = false
         siteID = "08di01wh"
         limit = 5
         height = "Auto"
