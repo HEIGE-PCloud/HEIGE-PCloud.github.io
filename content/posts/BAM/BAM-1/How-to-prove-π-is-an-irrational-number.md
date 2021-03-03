@@ -9,7 +9,7 @@ draft: false
 
 ## Preface
 
-You have leaned how to prove $\sqrt{2}$ is an irrational number, how about another famous number $\pi$? The number $\pi$ is very useful in our daily life. You need it to calculate the perimeter and area of a circle, you need it in trigonometry and geometry as well. You might have heard that just like $\sqrt{2}$, $\pi$ is an irrational number too. But how can you prove this? Let's start our journey from an easier question: How to define number $\pi$?   
+You have learned how to prove $\sqrt{2}$ is an irrational number, how about another famous number $\pi$? The number $\pi$ is very useful in our daily life. You need it to calculate the perimeter and area of a circle, you need it in trigonometry and geometry as well. You might have heard that just like $\sqrt{2}$, $\pi$ is an irrational number too. But how can you prove this? Let's start our journey from an easier question: How to define number $\pi$?   
 
 {{< admonition type=tip title="Rewind" open=true >}}
 How to prove $\sqrt{2}$ is an irrational number is covered in A Level Mathematics Student Book 2, Chapter 1 - Proof and mathematical communication, Section 2 - Proof by contradiction.
@@ -92,7 +92,7 @@ The trapezium rule is covered in A Level Mathematics Student Book 2, Chapter 15 
 
 ### Rational or Irrational?
 
-You can see that there are several different ways to define and work out the value of the number $\pi$, but these methods dose not seem to help proving its irrationality at all. Actually, whether the number $\pi$ is rational is a very hard question. Around 250 BC, the ancient Greeks have already had an algorithm to approximate $\pi$ with arbitrary accuracy. But not until 2000 years later, in 1761, the first proof of $\pi$ is an irrational number is proposed by Johann Heinrich Lambert.
+You can see that there are several different ways to define and work out the value of the number $\pi$, but these methods does not seem to help proving its irrationality at all. Actually, whether the number $\pi$ is rational is a very hard question. Around 250 BC, the ancient Greeks have already had an algorithm to approximate $\pi$ with arbitrary accuracy. But not until 2000 years later, in 1761, the first proof of $\pi$ is an irrational number is proposed by Johann Heinrich Lambert.
 
 Lambert's proof is based on continued fraction expansion and is quite complex. Today, I would like to introduce another proof proposed by Ivan Niven published in June 1947. It is only one page and you can read it here.
 
@@ -158,7 +158,7 @@ We use proof by contradiction to prove that $\pi$ is an irrational number.
 
 ### Prove that $A$ is an integer
 
-So at the first step, we assume that $\pi=\frac{p}{q}$ where $p$ and $q$ are integers with no common factors. This step is exactly the same when you try to proof $\sqrt{2}$ is irrational. But unlike $\sqrt{2}$, which you can simply square it to get a nice integer $2$, the number $\pi$ is actually a lot harder to work with. So if the next few steps does not make a lot of sense for you, just keep on reading, and you will get there at the end!
+So at the first step, we assume that $\pi=\frac{p}{q}$ where $p$ and $q$ are integers with no common factors. This step is exactly the same when you try to proof $\sqrt{2}$ is irrational. But unlike $\sqrt{2}$, which you can simply square it to get a nice integer $2$, the number $\pi$ is actually a lot harder to work with. So if the next few steps do not make a lot of sense to you, just keep on reading, and you will get there at the end!
 
 Next, we construct a function $f(x)=\frac{x^n(p-qx)^n}{n!}(n\isin\natnums)$. Note that the term $(p-qx)^n$ can be expanded by using the binomial expansion.
 
@@ -242,14 +242,14 @@ So $f^{(k)}(0)=(-1)^{k}f^{(k)}(\pi)$. As we have already known that $f^{(k)}(0)\
 
 Now, let's keep moving on. We define a new function $F(x)$.
 
-$$F(x)=f(x)-f^{(2)}(x)+f^{(4)}(x)-f^{(6)}(x)+…+(-1)^nf^{(2n)}(x)$$
+$$F(x)=f(x)-f^{(2)}(x)+f^{(4)}(x)-…+(-1)^nf^{(2n)}(x)$$
 
 The function $F(x)$ has some interesting properties.
 
 $$
 \begin{aligned}
-    F(x)+F''(x)=f(x)-&f^{(2)}(x)+f^{(4)}(x)-f^{(6)}(x)+…+(-1)^nf^{(2n)}(x)\\\\ 
-    +&f^{(2)}(x)-f^{(4)}(x)+f^{(6)}(x)+…-(-1)^{n}f^{(2n)}(x)+(-1)^{n+2}f^{(2n+2)}(x)
+    F(x)+F''(x)=f(x)-&f^{(2)}(x)+f^{(4)}(x)-…+(-1)^nf^{(2n)}(x)\\\\ 
+    +&f^{(2)}(x)-f^{(4)}(x)+…-(-1)^{n}f^{(2n)}(x)+(-1)^{n+2}f^{(2n+2)}(x)
 \end{aligned}
 $$
 
@@ -275,7 +275,7 @@ Now we have found the primitive of $f(x)\sin(x)$. So we can work out the definit
 $$
 \begin{aligned}
     \int_0 ^\pi f(x)\sin(x)\operatorname{d}x=&\left[F'(x)\sin(x)-F(x)\cos(x)\right]_{0}^{\pi}\\\\ 
-    =&F'(\pi)\sin(\pi)-F(\pi)\cos(\pi)-F'(0)\sin(0)+F(0)\cos(0)
+    =&F'(\pi)\sin(\pi)-F(\pi)\cos(\pi)-F'(0)\sin(0)+F(0)\cos(0)\\\\ 
     =&F(0)+F(\pi)
 \end{aligned}
 $$
