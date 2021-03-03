@@ -16,3 +16,7 @@ hiddenFromSearch: false
 featuredImage: ""
 featuredImagePreview: ""
 ---
+
+{{< admonition type=warning title="TODO" open=true >}}
+TODO: TODO
+{{< /admonition >}}
