@@ -4,12 +4,14 @@ defaultContentLanguage = "en"
 # 网站语言, 仅在这里 CN 大写
 languageCode = "en"
 # 是否包括中日韩文字
-hasCJKLanguage = true
-# 网站标题
+hasCJKLanguage = false
+# Website title
 title = "Planet Cloud"
-
-# 更改使用 Hugo 构建网站时使用的默认主题
 theme = "LoveIt"
+enableRobotsTXT = true
+enableEmoji = true
+enableGitInfo = true
+
 
 [menu]
   [[menu.main]]
