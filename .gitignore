@@ -1,2 +1,5 @@
 # ignore my local powershell script
 *.ps1
+
+# ignore auto gen scss
+_gen/
