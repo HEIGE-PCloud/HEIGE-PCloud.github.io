@@ -296,14 +296,14 @@ Now we have shown that $A$ is an integer. And then we will try to show that $A$ 
 
 ### Prove that $A$ is not an integer
 
-Before we can do that, there are three axioms we need to prove in advance:
+Before we can do that, there are three Lemmas we need to prove in advance:
 1. If $f(x)>0$ then $\int_a ^b f(x) \operatorname{d}x>0$
 2. If $0<f(x)<g(x)$ then $0<\int_a ^b f(x) \operatorname{d}x<\int_a ^b g(x) \operatorname{d}x$
 3. $\lim\limits_{n\to+\infin}\frac{\pi^{n+1}p^n}{n!}=0$
 
 Unluckily, to proof them strictly need something beyond the A Level syllabus. You can read the strict proof bellow if you are interested, or you can just take them for now and keep moving on.
 
-#### Axiom 1
+#### Lemma 1
 
 We need to prove for $a<b$, if $f(x)>0$ then $\int_a ^b f(x) \operatorname{d}x>0$.
 
@@ -325,7 +325,7 @@ And now we have $f(x)>0$, $\Delta x_i>0$. So
 
 $$\int_{a}^{b}f(x)\operatorname{d}x=\lim_{\lambda\to0}\sum_{i=0}^{n}f(\xi_i)\Delta x_i>0$$
 
-Axiom 1 is proved.
+Lemma 1 is proved.
 
 Note that the inverse proposition is not true. Think about $f(x)=\sin(x)$
 
@@ -336,11 +336,11 @@ But $\sin(\frac{3\pi}{2})=-1<0$.
 {{< /admonition >}}
 
 
-#### Axiom 2
+#### Lemma 2
 
-We need to prove if $0<f(x)<g(x)$ then $0<\int_a ^b f(x) \operatorname{d}x<\int_a ^b g(x) \operatorname{d}x$. With the help of Axiom 1, this part is relatively easy.
+We need to prove if $0<f(x)<g(x)$ then $0<\int_a ^b f(x) \operatorname{d}x<\int_a ^b g(x) \operatorname{d}x$. With the help of Lemma 1, this part is relatively easy.
 
-Let $h(x)=g(x)-f(x)>0$, based on Axiom 1,
+Let $h(x)=g(x)-f(x)>0$, based on Lemma 1,
 
 $$
 \begin{aligned}
@@ -351,9 +351,9 @@ $$
 \end{aligned}
 $$
 
-Axiom 2 is proved.
+Lemma 2 is proved.
 
-#### Axiom 3
+#### Lemma 3
 
 We need to prove $\lim\limits_{n\to+\infin}\frac{a^n}{n!}=0(a\isin\R^{+})$.
 
@@ -371,13 +371,13 @@ Based on the squeeze theorem, we have
 
 $$\lim\limits_{n\to+\infin}\frac{a^n}{n!}=K\times\lim_{n\to+\infty}\frac{a}{n}\frac{a}{n-1}\cdots\frac{a}{t}=K\times0=0$$
 
-Axiom 3 is proved.
+Lemma 3 is proved.
 
 {{< /admonition >}}
 
 #### Determine the range of $A$
 
-When $0<x<\pi$, $x^n>0$, $q^n>0$, $(\pi-x)^n>0$, $n!>0$, $\sin(x)>0$ so $f(x)\sin(x)>0$. Based on Axiom 1, we can say
+When $0<x<\pi$, $x^n>0$, $q^n>0$, $(\pi-x)^n>0$, $n!>0$, $\sin(x)>0$ so $f(x)\sin(x)>0$. Based on Lemma 1, we can say
 
 $$A=\int_0 ^\pi f(x)\sin(x)\operatorname{d}x>0$$
 
@@ -385,13 +385,13 @@ Note that when $0<x<\pi$, we have $f(x)=\frac{x^n(p-qx)^n}{n!}<\frac{\pi^np^n}{n
 
 $$f(x)\sin(x)<\frac{\pi^np^n}{n!}\times1$$
 
-And based on Axiom 2, we have
+And based on Lemma 2, we have
 
 $$A=\int_0 ^\pi f(x)\sin(x)\operatorname{d}x<\int_0 ^\pi \frac{\pi^np^n}{n!}\times 1\operatorname{d}x=\frac{\pi^{n+1}p^n}{n!}$$
 
 $$\therefore A<\frac{\pi^{n+1}p^n}{n!}$$
 
-And based on Axiom 3, we have
+And based on Lemma 3, we have
 
 $$\lim\limits_{n\to+\infin}\frac{\pi^{n+1}p^n}{n!}=\pi\times\lim\limits_{n\to+\infin}\frac{(\pi p)^n}{n!}=\pi\times0=0$$
 
