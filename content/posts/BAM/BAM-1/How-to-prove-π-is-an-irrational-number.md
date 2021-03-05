@@ -275,7 +275,8 @@ Now we have found the primitive of $f(x)\sin(x)$. So we can work out the definit
 
 $$
 \begin{aligned}
-    \int_0 ^\pi f(x)\sin(x)\operatorname{d}x=&\left[F'(x)\sin(x)-F(x)\cos(x)\right]_{0}^{\pi}\\\\ 
+    &\int_0 ^\pi f(x)\sin(x)\operatorname{d}x\\\\ 
+    =&\left[F'(x)\sin(x)-F(x)\cos(x)\right]_{0}^{\pi}\\\\ 
     =&F'(\pi)\sin(\pi)-F(\pi)\cos(\pi)-F'(0)\sin(0)+F(0)\cos(0)\\\\ 
     =&F(0)+F(\pi)
 \end{aligned}
