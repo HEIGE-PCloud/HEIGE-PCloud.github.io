@@ -1,5 +1,5 @@
 ---
-name: New Idea for Project Beyond A Level Mathematics
+name: New idea for Project Beyond A Level Mathematics
 about: Raise interesting questions and topics for Project BAM
 title: "[BAM] New idea: How to prove π is an irrational number?"
 labels: Beyond A Level Mathematics, todo
