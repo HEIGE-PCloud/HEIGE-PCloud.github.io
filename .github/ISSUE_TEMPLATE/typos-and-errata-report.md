@@ -1,5 +1,5 @@
 ---
-name: Typos and errata report
+name: Report typos and errata
 about: Report any typos or errata you find
 title: "[Typos/Errata Report]"
 labels: bug
