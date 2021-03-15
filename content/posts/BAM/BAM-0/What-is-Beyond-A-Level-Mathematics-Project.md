@@ -31,7 +31,7 @@ The BAM project can be and should be treated as an extension to the A Level Math
 
 Most human beings do not read mathematical blogs for entertainment, so I don't expect thousands of readers from the beginning. But if you are one of the following types of people, you might find these posts quite interesting.
 
-- Six form student who is very interested in mathematics and may decide to study math in university.
+- Six form student who is very interested in mathematics and may decide to study maths in university.
 
 Notice that the blog will involve all knowledge points in A Level Maths and Further Maths. So it assumes you have done all these already. But normal schools take two years to finish teaching all AS and A Level content. That's why you need to be "very interested in maths" and self-studies most of the content in advance.
 
@@ -53,15 +53,16 @@ For teachers
 
 ## What is the pricing?
 
-All blogs are licensing under CC 4.0
+All blogs are licensing under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/).
 
-Free for education
+Free for education. There is no worries to print the posts out and distribute it to your students.
 
-No commercial use (You can reprint and distribute it for free and attach the link to the original page, but you cannot sell it)
+No commercial use. You cannot sell it.
 
-You can still donate by BTC so that I can buy more maths books (They are so expensive) and produce more content.
-```
-BTC address
+You can still donate by BTC if you have too much money to spend.
+
+```BTC address
+1KxBjeFLuLsmhKrupDQSg3gDyNg7uLQNX7
 ```
 
 ## How to contribute?
@@ -71,14 +72,15 @@ There are four ways that you can contribute to this project.
 1. Subscribe, read and comment
 provide subscription with RSS. Use common RSS services (Feedly/RSS Hub) to subscribe to it.
 [RSS](https://planet-cloud.fun/categories/beyond-a-level-mathematics/index.xml)
-2. Recommend it to your math teacher or your schoolmates who are also interested in pure Mathematics.
+2. Recommend it to your maths teacher or your schoolmates who are also interested in pure Mathematics.
 More people, more ideas.
 3. Report typos and errata
-GitHub issues
+[GitHub issues](https://github.com/HEIGE-PCloud/HEIGE-PCloud.github.io/issues/new/choose/)
 4. Suggest new ideas for BAM
-GitHub issues
+[GitHub issues](https://github.com/HEIGE-PCloud/HEIGE-PCloud.github.io/issues/new/choose/)
 
 Currently does not support submitting your articles. But all the development can be seen as draft pull requests. You can see the draft of new posts and suggest advice.
+[Github pull requests](https://github.com/HEIGE-PCloud/HEIGE-PCloud.github.io/pulls)
 
 {{< admonition type=warning title="TODO" open=true >}}
 TODO: Details
@@ -88,7 +90,7 @@ TODO: Details
 
 ### Privacy
 
-The entire site only has one cookie. `__cfuid` Required by Cloudflare to provide CDN and protection for the site. No tracker, no ads. The downside is I do not have any stats about how many views of this webpage. 
+The entire site only has one cookie. `__cfduid` Required by Cloudflare to provide CDN and protection for the site (Will be removed soon). No tracker, no ads. The downside is I do not have any stats about how many views of this webpage. 
 
 ### Safety
 
