@@ -25,7 +25,9 @@ I have tried to write notes for undergraduate content before and find that at th
 So if you interested in those topics, go ahead and read a **real** textbook, or maybe consider doing a maths degree.
 {{< /admonition >}}
 
-The BAM project can be and should be treated as an extension to the A Level Maths and Further Maths.
+The BAM project should be treated as an extension to the A Level Maths and Further Maths. The content will stick to the textbook strictly. I am using the textbook from [OCR](https://ocr.org.uk/), if you are studying under a different exam board, the `Rewind` section may not work for you, but the content itself is independent and does not rely on any specific exam board.
+
+The content in BAM starts from a single topic from the A Level textbook. And it extends very fast to cover several different topics. For example, [BAM-1 How to prove π is an irrational number?](https://planet-cloud.fun/how-to-prove-%CF%80-is-an-irrational-number/) starts from proving by contradiction and extend to the definition of $pi$, binomial expansion, calculus and more. [BAM-2 What is Poisson Distribution?](https://planet-cloud.fun/what-is-poisson-distribution/) starts from the Poisson distribution and covers things like binomial distribution, the Maclaurin series, calculus and more. A typical post starts from a basic introduction to the topic and the question we have. Then, there will have a STEP-type question designed to guide you in exploring the question by yourself. The STEP-type question is followed by a detailed explaination to the topic which also provides an indirect solution to the question. Some extension reading materials will list at the end. You can leave your ideas in the comment area at the bottom of the page.
 
 ## Who is BAM Project designed for?
 
