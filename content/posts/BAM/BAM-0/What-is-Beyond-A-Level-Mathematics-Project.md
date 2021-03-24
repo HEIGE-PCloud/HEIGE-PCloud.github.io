@@ -27,7 +27,7 @@ So if you interested in those topics, go ahead and read a **real** textbook, or 
 
 The BAM project should be treated as an extension to the A Level Maths and Further Maths. The content will stick to the textbook strictly. I am using the textbook from [OCR](https://ocr.org.uk/), if you are studying under a different exam board, the `Rewind` section may not work for you, but the content itself is independent and does not rely on any specific exam board.
 
-The content in BAM starts from a single topic from the A Level textbook. And it extends very fast to cover several different topics. For example, [BAM-1 How to prove π is an irrational number?](https://planet-cloud.fun/how-to-prove-%CF%80-is-an-irrational-number/) starts from proving by contradiction and extend to the definition of $pi$, binomial expansion, calculus and more. [BAM-2 What is Poisson Distribution?](https://planet-cloud.fun/what-is-poisson-distribution/) starts from the Poisson distribution and covers things like binomial distribution, the Maclaurin series, calculus and more. A typical post starts from a basic introduction to the topic and the question we have. Then, there will have a STEP-type question designed to guide you in exploring the question by yourself. The STEP-type question is followed by a detailed explaination to the topic which also provides an indirect solution to the question. Some extension reading materials will list at the end. You can leave your ideas in the comment area at the bottom of the page.
+The content in BAM starts from a single topic from the A Level textbook. And it extends very fast to cover several different topics. For example, [BAM-1 How to prove π is an irrational number?](/how-to-prove-pi-is-an-irrational-number/) starts from proving by contradiction and extend to the definition of $pi$, binomial expansion, calculus and more. [BAM-2 What is Poisson Distribution?](/what-is-poisson-distribution/) starts from the Poisson distribution and covers things like binomial distribution, the Maclaurin series, calculus and more. A typical post starts from a basic introduction to the topic and the question we want to solve. Then, there will have a STEP-type question designed to guide you exploring the question yourself. The STEP-type question is followed by a detailed explaination to the topic which also provides an indirect solution to the question. Some extension reading materials will list at the end. You can leave your ideas in the comment area at the bottom of the page.
 
 ## Who is BAM Project designed for?
 
@@ -44,7 +44,7 @@ Similarly, you need to keep in mind that the blog will not follow your teaching 
 ## How to make the best use of it?
 
 For students
-- I recommend you to read it on an iPad or PC with a large screen, or print it out and read it on paper. The mobile experience is not guaranteed, and there are **not** easy articles that you can read on your phone while queuing for lunch. Pen and paper are needed because there may have small or large questions for you to solve.
+- I recommend you to read it on an iPad or PC with a large screen, or print it out and read it on paper. The mobile experience is not guaranteed, and there are **no** easy articles that you can read on your phone while queuing for lunch. Pen and paper are needed because there may have small or large questions for you to solve.
 - Work through it.
 - Have a brief look at extra readings, find interested ones to keep moving on.
 - Leave a comment if you have any questions or just have something in your mind to share with others.
@@ -55,9 +55,9 @@ For teachers
 
 ## What is the pricing?
 
-All blogs are licensing under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/).
+All posts are licensed under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/).
 
-They are free for education. There is no worry to print the posts out and distribute it to your students.
+It is free for education. There is no worry to print the posts out and distribute them to your students.
 
 Commercial uses are restricted. You cannot sell it.
 
@@ -111,7 +111,7 @@ This project follows [Contributor Covenant Code of Conduct](https://www.contribu
 
 #### Comment
 
-The comment system is based on [Valine](https://valine.js.org/en/) and is fully anonymous. You cannot delete it or edit it after posting it - because we do not know who post the comment, so we do not know who has the permission to edit or delete it. The content of the comments will be carefully monitored. The [Akismet](https://akismet.com/) API is used to automanticly delete spam comments and you can report a spam commet to this [email](mailto:heige.pcloud@outlook.com).
+The comment system is based on [Valine](https://valine.js.org/en/) and is fully anonymous. You cannot delete it or edit it after posting it - because we do not know who post the comment, so we do not know who has the permission to edit or delete it. The content of the comments will be carefully monitored. The [Akismet](https://akismet.com/) API is used to automanticly delete spam comments and you can report a spam comment to this [email](mailto:heige.pcloud@outlook.com).
 
 #### External links and embedded webpage
 
