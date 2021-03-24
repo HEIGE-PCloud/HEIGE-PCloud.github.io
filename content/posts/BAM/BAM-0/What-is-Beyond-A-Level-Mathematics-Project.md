@@ -44,7 +44,7 @@ Similarly, you need to keep in mind that the blog will not follow your teaching 
 ## How to make the best use of it?
 
 For students
-- I recommend you to read it on an iPad or PC with a large screen, or print it out and read it on paper. The mobile experience is not guaranteed, and there are **not** easy articles that you can read on your phone while queuing for lunch. Pen and paper are needed because there may have small or large questions for you to solve.
+- I recommend you to read it on an iPad or PC with a large screen, or print it out and read it on paper. The mobile experience is not guaranteed, and there are **no** easy articles that you can read on your phone while queuing for lunch. Pen and paper are needed because there may have small or large questions for you to solve.
 - Work through it.
 - Have a brief look at extra readings, find interested ones to keep moving on.
 - Leave a comment if you have any questions or just have something in your mind to share with others.
@@ -55,9 +55,9 @@ For teachers
 
 ## What is the pricing?
 
-All blogs are licensing under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/).
+All posts are licensed under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/).
 
-They are free for education. There is no worry to print the posts out and distribute it to your students.
+It is free for education. There is no worry to print the posts out and distribute them to your students.
 
 Commercial uses are restricted. You cannot sell it.
 
@@ -111,7 +111,7 @@ This project follows [Contributor Covenant Code of Conduct](https://www.contribu
 
 #### Comment
 
-The comment system is based on [Valine](https://valine.js.org/en/) and is fully anonymous. You cannot delete it or edit it after posting it - because we do not know who post the comment, so we do not know who has the permission to edit or delete it. The content of the comments will be carefully monitored. The [Akismet](https://akismet.com/) API is used to automanticly delete spam comments and you can report a spam commet to this [email](mailto:heige.pcloud@outlook.com).
+The comment system is based on [Valine](https://valine.js.org/en/) and is fully anonymous. You cannot delete it or edit it after posting it - because we do not know who post the comment, so we do not know who has the permission to edit or delete it. The content of the comments will be carefully monitored. The [Akismet](https://akismet.com/) API is used to automanticly delete spam comments and you can report a spam comment to this [email](mailto:heige.pcloud@outlook.com).
 
 #### External links and embedded webpage
 
