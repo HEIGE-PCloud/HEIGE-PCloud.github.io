@@ -7,7 +7,7 @@ languageCode = "en"
 hasCJKLanguage = false
 # Website title
 title = "Planet Cloud"
-theme = "LoveIt"
+theme = "DoIt"
 enableRobotsTXT = true
 enableEmoji = true
 enableGitInfo = true
@@ -51,7 +51,7 @@ enableGitInfo = true
     weight = 4
 
 [params]
-  #  LoveIt 主题版本
+  #  DoIt 主题版本
   version = "0.2.X"
   # 网站描述
   description = "Planet Cloud"
@@ -385,7 +385,7 @@ enableGitInfo = true
         serverURLs = ""
         #  emoji 数据文件名称, 默认是 "google.yml"
         # ("apple.yml", "google.yml", "facebook.yml", "twitter.yml")
-        # 位于 "themes/LoveIt/assets/data/emoji/" 目录
+        # 位于 "themes/DoIt/assets/data/emoji/" 目录
         # 可以在你的项目下相同路径存放你自己的数据文件:
         # "assets/data/emoji/"
         emoji = ""
@@ -492,7 +492,7 @@ enableGitInfo = true
   [params.cdn]
     # CDN 数据文件名称, 默认不启用
     # ("jsdelivr.yml")
-    # 位于 "themes/LoveIt/assets/data/cdn/" 目录
+    # 位于 "themes/DoIt/assets/data/cdn/" 目录
     # 可以在你的项目下相同路径存放你自己的数据文件:
     # "assets/data/cdn/"
     data = "jsdelivr.yml"
