@@ -23,9 +23,9 @@ This post will answer all these questions.
 >
 >Recordable accidents occur in a factory at an average rate of seven every year, independently of each other. Find the probability that in a given year exactly three recordable accidents occurred.
 
-This is the same example in the textbook (Worked Example 3.1). I would like to use it as a good example to explain how we develop the Poisson distribution. So let's consider it without any knowledge you have known about Poisson distribution. What we know is that seven accidents happen each year on average. What we need to find is the probability that in a given year, exact three accidents occurred.
+This is the same example in the textbook (Worked Example 3.1). I would like to use it as a good example to explain how we develop the Poisson distribution. So let's consider it without any knowledge you have known about Poisson distribution. What we know is that seven accidents happen each year on average. What we need to find is the probability that in a given year exact three accidents occurred.
 
-The answer is not that straightforward. But we can add a further condition to make it a little bit easier. We **assume** that "there is a maximum of 1 accident happen every month."
+The answer is not that straightforward. But we can add a further condition to make it a little bit easier. We **assume** that "there is a maximum of one accident that happen every month."
 
 Here is a possible configuration that three accidents happen this year.
 
@@ -40,7 +40,7 @@ Now the model can fit into the binomial distribution we have learnt before becau
 - Accidents are independent of each other
 - The probability of an accident is the same every month
 
-What is the probability for each month? We have the average for twelve months is seven, so for one month, it is $\frac{7}{12}$.
+What is the probability of having an accident each month? We know the average rate of twelve months is seven accidents, so for one month, it is $\frac{7}{12}$.
 
 So let's set up the binomial distribution:
 
@@ -61,7 +61,7 @@ A possible configuration we missed:
 {{< admonition type=quote title="Sad Sad September" open=false >}}
 {{< youtube 032Vq9J8b7c >}}
 {{< /admonition >}}
-But if there needs to have more than one accidents each month, the binomial distribution does not work any more, because there are more than 2 outcomes each month (no accident, one accident, two accidents, ...). And the solution is quite simple, we can divide the time into smaller intervals, for example, we divide a year into 365 intervals for 365 days instead of only 12 intervals. And the probability under this condition is $P(X=3)=\binom{365}{3}\frac{7}{365}^{3}(1-\frac{7}{365})^{362}\approx0.0512$ which is a great improvement than the twelve months configuration. And actually, it is quite close to the correct answer $0.0521$. However, the same issue occurs again, if you are unlucky enough, you can still have more than one accident every day, in which case the binomial distribution ignores those probabilities and result in a smaller overall probability. So we need to keep dividing, divide the time into **infinite** pieces.
+But if there needs to have more than one accidents each month, the binomial distribution does not work any more, because there are more than two outcomes each month (no accident, one accident, two accidents, ...). And the solution to this problem is quite simple, we can divide the time into smaller intervals, for example, we divide a year into 365 intervals for 365 days instead of only 12 intervals. And the probability under this condition is $P(X=3)=\binom{365}{3}\left(\frac{7}{365}\right)^{3}\left(1-\frac{7}{365}\right)^{362}\approx0.0512$ which is a great improvement than the twelve months configuration. And actually, it is quite close to the correct answer $0.0521$. However, the same issue occurs again, if you are unlucky enough, you can still have more than one accident every day, in which case the binomial distribution ignores those probabilities and result in a smaller overall probability. So we need to keep dividing, divide the time into **infinite** pieces.
 
 Let's generalize the question a little bit. For a fixed period (one year in this example), we divide it into $n$ periods. With an average rate $\lambda$ (7 accidents on average), the probability of having an accident in each period is $\frac{\lambda}{n}$. We need to divide the time into infinite periods, so we let $n\to+\infty$.
 
@@ -98,7 +98,7 @@ The definition of $e$ is
 
 $$e=\lim_{n\to\infty}\left(1+\frac{1}{n}\right)^{n}\approx2.71828\ldots$$
 
-In our case, we can transform our second limit to get some help from this.
+In our case, we can transform our second limit to get some help from the number $e$.
 
 $$
 \begin{aligned}
@@ -133,6 +133,8 @@ $$\operatorname{P}(X=x)=\frac{\lambda^{x}e^{-\lambda}}{x!}$$
 So back to the original question, when $x=3$
 
 $$\operatorname{P}(x=3)=\frac{7^3\cdot e^{-7}}{3!}\approx0.0521$$
+
+Awesome!:)
 
 ## Why Poisson distribution has the same expectation and variance
 
@@ -192,7 +194,7 @@ $$
 
 $$\operatorname{Var}(X)=\operatorname{E}(X^{2})-(\operatorname{E}(X))^{2}$$
 
-We need the expression for $\operatorname{E}(X^2)$ before we can work out the expression for variance.
+We need the expression of $\operatorname{E}(X^2)$ before we can work out the expression of variance.
 
 $$
 \begin{aligned}
