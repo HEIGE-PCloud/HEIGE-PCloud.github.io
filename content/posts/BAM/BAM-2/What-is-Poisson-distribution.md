@@ -61,17 +61,17 @@ A possible configuration we missed:
 {{< admonition type=quote title="Sad Sad September" open=false >}}
 {{< youtube 032Vq9J8b7c >}}
 {{< /admonition >}}
-But if there needs to have more than one accidents each month, the binomial distribution does not work any more, because there are more than two outcomes each month (no accident, one accident, two accidents, ...). And the solution to this problem is quite simple, we can divide the time into smaller intervals, for example, we divide a year into 365 intervals for 365 days instead of only 12 intervals. And the probability under this condition is $P(X=3)=\binom{365}{3}\left(\frac{7}{365}\right)^{3}\left(1-\frac{7}{365}\right)^{362}\approx0.0512$ which is a great improvement than the twelve months configuration. And actually, it is quite close to the correct answer $0.0521$. However, the same issue occurs again, if you are unlucky enough, you can still have more than one accident every day, in which case the binomial distribution ignores those probabilities and result in a smaller overall probability. So we need to keep dividing, divide the time into **infinite** pieces.
+But if there needs to have more than one accidents each month, the binomial distribution does not work any more, because there are more than two outcomes each month (no accident, one accident, two accidents, ...). And the solution to this problem is quite simple, we can divide the time into smaller intervals, for example, we divide a year into 365 intervals for 365 days instead of only 12 intervals. And the probability under this condition is $P(X=3)=\binom{365}{3}\left(\frac{7}{365}\right)^{3}\left(1-\frac{7}{365}\right)^{362}\approx0.0512$ which is a great improvement than the twelve months configuration. And actually, it is quite close to the correct answer $0.0521$. However, the same issue occurs again, if you are unlucky enough, you can still have more than one accident every day, in which case the binomial distribution ignores those probabilities and results in a smaller overall probability. So we need to keep dividing, divide the time into **infinite** pieces.
 
-Let's generalize the question a little bit. For a fixed period (one year in this example), we divide it into $n$ periods. With an average rate $\lambda$ (7 accidents on average), the probability of having an accident in each period is $\frac{\lambda}{n}$. We need to divide the time into infinite periods, so we let $n\to+\infty$.
+Let's generalize the question a little bit. For a fixed period (one year in this example), we divide it into $n$ periods. With an average rate $\lambda$ (seven accidents on average), the probability of having an accident in each period is $\frac{\lambda}{n}$. We need to divide the time into infinite periods, so we let $n\to+\infty$.
 
 $$P(X=x)=\lim_{n\to+\infty}\binom{n}{x}\left(\frac{\lambda}{n}\right)^{x}\left(1-\frac{\lambda}{n}\right)^{n-x}$$
 
-We have got a very complex limit to solve, let's see what we can do here. The first thing we can do is expand the binomial coefficient into multiplications.
+We have got a very complex limit to solve, let's see what we can do here. The first thing we can do is to expand the binomial coefficient into multiplications.
 
 $$P(X=x)=\lim_{n\to+\infty}\frac{n(n-1)(n-2)\cdots(n-x+1)}{x!}\cdot\frac{\lambda^{x}}{n^{x}}\cdot\left(1-\frac{\lambda}{n}\right)^{n-x}$$
 
-Notice that $x$ and $\lambda$ are constants, so we can take them out from the limit.
+Notice that $x$ and $\lambda$ are constants, so we can take them out of the limit.
 
 $$P(X=x)=\frac{\lambda^{x}}{x!}\cdot\lim_{n\to+\infty}\frac{n}{n}\cdot\frac{n-1}{n}\cdots\frac{n-x+1}{n}\left(1-\frac{\lambda}{n}\right)^{-x}\left(1-\frac{\lambda}{n}\right)^{n}$$
 
@@ -134,7 +134,7 @@ So back to the original question, when $x=3$
 
 $$\operatorname{P}(x=3)=\frac{7^3\cdot e^{-7}}{3!}\approx0.0521$$
 
-Awesome!:)
+Awesome!
 
 ## Why Poisson distribution has the same expectation and variance
 
@@ -225,7 +225,7 @@ $$
 
 ### History
 
-Obviously, Poisson distribution is called "Poisson distribution" is because someone named "Poisson" introduced it. His full name is Siméon Denis Poisson (1781–1840) and the distribution was published together with his probability theory in his work *Recherches sur la probabilité des jugements en matière criminelle et en matière civile*(1837).
+Obviously, the reason why Poisson distribution is called "Poisson distribution" is because someone named "Poisson" introduced it. His full name is Siméon Denis Poisson (1781–1840) and the distribution was published together with his probability theory in his work *Recherches sur la probabilité des jugements en matière criminelle et en matière civile*(1837).
 
 And here is the [link](https://gallica.bnf.fr/ark:/12148/bpt6k110193z/f218.image) to his original work.
 
