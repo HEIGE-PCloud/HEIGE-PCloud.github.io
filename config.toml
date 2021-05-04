@@ -68,6 +68,8 @@ enableGitInfo = true
   dateFormat = "2006-01-02"
   # 网站图片, 用于 Open Graph 和 Twitter Cards
   images = ["/favicon.ico"]
+  # 开启 PWA 支持
+  enablePWA = false
 
   #  应用图标配置
   [params.app]
@@ -188,7 +190,7 @@ enableGitInfo = true
     [params.home.posts]
       enable = true
       # 主页每页显示文章数量
-      paginate = 10
+      paginate = 8
       #  被 params.page 中的 hiddenFromHomePage 替代
       # 当你没有在文章前置参数中设置 "hiddenFromHomePage" 时的默认行为
       defaultHiddenFromHomePage = false
@@ -280,6 +282,8 @@ enableGitInfo = true
     linkToMarkdown = true
     #  是否在 RSS 中显示全文内容
     rssFullText = false
+    # 页面样式 ("normal", "wide")
+    pageStyle = "normal"
     #  目录配置
     [params.page.toc]
       # 是否使用目录
