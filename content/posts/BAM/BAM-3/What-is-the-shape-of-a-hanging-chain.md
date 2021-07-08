@@ -7,7 +7,7 @@ categories: [Beyond A Level Mathematics]
 lightgallery: true
 ---
 
-You may think that the graph of $\cosh{x}$ looks like a parabola, but it is slightly flatter. It is called a catenary, which is the shape formed by a hanging chain.`
+You may think that the graph of $\cosh{x}$ looks like a parabola, but it is slightly flatter. It is called a catenary, which is the shape formed by a hanging chain.
 
 <!--more-->
 
@@ -21,7 +21,7 @@ We can find many different "hanging strings" or "hanging chains" in our daily li
 
 So here comes the question: what is the expression of this curve? Is it $y=x^2$ or $y=\sin(x)$ or something else?
 
-It turns out the curve has a formulae $y=a\cosh\left(\frac{x}{a}\right)$, which is a hyperbolic function.
+It turns out the curve has an expression of $y=a\cosh\left(\frac{x}{a}\right)$, which is a hyperbolic function.
 
 {{< admonition type=tip title="Rewind" open=true >}}
 Hyperbolic functions are covered in A Level Further Mathematics Pure Core Student Book 2, Chapter 6 - Hyperbolic functions.
@@ -31,7 +31,7 @@ But how can we derive this result?
 
 ## Try to prove it yourself
 
-1. Consider a catenary $y$, select a curve $AB$ on $y$ where point $A$ is the lowest point of $c$ and point $B$ is an arbitrary point on $y$. Show that $y'=\frac{l}{a}$ where $l$ is the length of $AB$ and $a$ is a constant.
+1. Consider a catenary $y$, select a curve $AB$ on $y$ where point $A$ is the lowest point of $y$ and point $B$ is an arbitrary point on $y$. Show that $y'=\frac{l}{a}$ where $l$ is the length of $AB$ and $a$ is a constant.
 
 2. By considering a very short length of the chain $AB$ or otherwise, show that $l=\int_{0}^{x}\sqrt{1+y'^{2}}\mathrm{d}x$.
 
@@ -43,7 +43,7 @@ But how can we derive this result?
 
 ### Resolve forces
 
-Assume we have a thin and inextensible chain hangs stationary in the air. Let $A$ be the lowest point of the chain. We select another arbitrary point $B$ and let's consider the chain $AB$. There are 3 forces acting on the chain $AB$, a horizontal force $F$ to the left acting on point $A$, a force $T$ acting on point $B$ along its tangent and the gravity of the chain $AB$.
+Assume we have a thin and inextensible chain hangs stationary in the air. Let $A$ be the lowest point of the chain. We select another arbitrary point $B$ and let's consider the chain $AB$. There are $3$ forces acting on the chain $AB$, a horizontal force $F$ to the left acting on point $A$, a force $T$ acting on point $B$ along its tangent and the gravity of the chain $AB$.
 
 {{< image src="/images/BAM/BAM-3/catenary.svg" caption="Catenary" >}}
 
@@ -51,7 +51,7 @@ Assume we have a thin and inextensible chain hangs stationary in the air. Let $A
 How to split a force into components in two perpendicular directions is covered in A Level Mathematics Student Book 2, Chapter 21 - Forces in context, Section 1 - Resolving forces
 {{< /admonition >}}
 
-Since chain $AB$ is hanging stationary in the air, the resultant force is zero. Hence we have a simultaneous equation.
+Since chain $AB$ is hanging stationary in the air, the resultant force is zero. Hence we have a pair of simultaneous equations.
 
 $$
 \begin{cases}
@@ -166,6 +166,30 @@ Which gives us
 
 $$\sinh^{-1}(p)=\frac{x}{a}+c_1$$
 
+{{< admonition type=info title="Prove $\int\frac{\mathrm{d}p}{\sqrt{1+p^2}}=\sinh^{-1}(p)+c$" open=true >}}
+
+Notice the hyperbolic identity $\cosh^{2}(x)-\sinh^{2}(x)=1$, it is obvious to make a subsitution $p=\sinh(u)$.
+
+So we have 
+
+$$\frac{\mathrm{d}p}{\mathrm{d}u}=\cosh(u)$$
+
+
+$$
+\begin{aligned}
+    \int\frac{\mathrm{d}p}{\sqrt{1+p^2}}&=\int\frac{\cosh(u)\mathrm{d}u}{\sqrt{1+\sinh^{2}(u)}} \\\\ 
+    &=\int\frac{\cosh(u)}{\cosh(u)}\mathrm{d}u \\\\ 
+    &=\int1\\ \mathrm{d}u \\\\ 
+    &=u+c
+\end{aligned}
+$$
+
+Where we have $u=\sinh^{-1}(p)$, so here we have proved this.
+
+$$\int\frac{\mathrm{d}p}{\sqrt{1+p^2}}=\sinh^{-1}(p)+c$$
+
+{{< /admonition >}}
+
 We have the initial condition that when $x=0$, $p=y'(0)=0$.
 
 $$\sinh^{-1}(0)=0=\frac{0}{a}+c_1$$
@@ -179,7 +203,7 @@ Now we subsitute $p=y'(x)$ back into the equation and integrate both sides again
 
 $$\frac{\mathrm{d}y}{\mathrm{d}x}=\sinh\left(\frac{x}{a}\right)$$
 
-$$\int\mathrm{d}y=\int\sinh\left(\frac{x}{a}\right)\mathrm{d}x$$
+$$\int1\\ \mathrm{d}y=\int\sinh\left(\frac{x}{a}\right)\mathrm{d}x$$
 
 Which gives us
 $$y=\frac{1}{a}\cosh\left(\frac{x}{a}\right)+c_2$$
@@ -196,4 +220,4 @@ $$y=a\cosh\left(\frac{x}{a}\right)$$
 
 ## Extension problem
 
-We made an assumption for our model: the chain is thin, inextensible with uniform density. What if the chain is extensible? Or nonuniform? How will these conditions change our result?
+We made an assumption for our model: the chain is thin, inextensible with uniform density. What if the chain is extensible? Or nonuniform? How will these conditions change the result?
